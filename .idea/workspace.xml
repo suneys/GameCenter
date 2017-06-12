@@ -2,31 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bda03f8c-2685-40a8-8dc7-10de52692b6e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/SQL/t_floder.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/model/AdvFolder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/awesome-bootstrap-checkbox.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/popupSmallMenu.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/zTreeStyle.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/IdCheckBox.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/adv_Folder.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/adv_Resource.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/icheck.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/jquery.form.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/jquery.pagination.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/ztree/jquery.popupSmallMenu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/ztree/jquery.ztree.core-3.5.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/ztree/jquery.ztree.excheck-3.5.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/ztree/jquery.ztree.exedit-3.5.js" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/yoyo/gamecenter/model/User.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/GameCenter/WEB-INF/classes/com/yoyo/gamecenter/controller/IndexController.class" afterPath="$PROJECT_DIR$/target/GameCenter/WEB-INF/classes/com/yoyo/gamecenter/controller/IndexController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/yoyo/gamecenter/controller/IndexController.class" afterPath="$PROJECT_DIR$/target/classes/com/yoyo/gamecenter/controller/IndexController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/controller/IndexController.java" afterPath="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/controller/IndexController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/model/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/model/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapping/UserMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapping/UserMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/Menu/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/Menu/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/Menu/resource.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/Menu/resource.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/Menu/terminal.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/Menu/terminal.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/GameCenter/WEB-INF/jsp/Menu/index.jsp" afterPath="$PROJECT_DIR$/target/GameCenter/WEB-INF/jsp/Menu/index.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/GameCenter/WEB-INF/jsp/Menu/resource.jsp" afterPath="$PROJECT_DIR$/target/GameCenter/WEB-INF/jsp/Menu/resource.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/GameCenter/WEB-INF/jsp/Menu/terminal.jsp" afterPath="$PROJECT_DIR$/target/GameCenter/WEB-INF/jsp/Menu/terminal.jsp" />
@@ -1515,8 +1494,16 @@
       <workItem from="1497170083526" duration="13191000" />
       <workItem from="1497233171719" duration="847000" />
       <workItem from="1497234157180" duration="706000" />
-      <workItem from="1497242993531" duration="7628000" />
+      <workItem from="1497242993531" duration="7758000" />
     </task>
+    <task id="LOCAL-00001" summary="添加资源模块">
+      <created>1497276727726</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1497276727726</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1552,7 +1539,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="193343000" />
+    <option name="totallyTimeSpent" value="193473000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1588,11 +1575,11 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1972028" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25034964" sideWeight="0.49745455" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1972028" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25034964" sideWeight="0.49745455" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2901146" sideWeight="0.49056605" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2901146" sideWeight="0.49056605" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24641834" sideWeight="0.509434" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32867134" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1612,7 +1599,8 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="添加资源模块" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加资源模块" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
