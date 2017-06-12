@@ -17,6 +17,8 @@
         <result column="user_TotalSend" property="totalSend" jdbcType="INTEGER"/>
         <result column="user_outDate" property="userOutDate" jdbcType="BIGINT"/>
         <result column="user_secretKey" property="userSecretKey" jdbcType="VARCHAR"/>
+    </resultMap>
+    <resultMap id="UserMoreMap" type="com.yoyo.gamecenter.model.User" extends="UserBaseMap">
         <!-- 一对多的关系 -->
         <!-- property: 指的是集合属性的值, ofType：指的是集合中元素的类型 -->
         <collection property="terminals" ofType="com.yoyo.gamecenter.model.Terminal" column="uId">
@@ -46,27 +48,37 @@
             <result column="souceType" property="souceType"/>
         </collection>
 
+        <collection property="advFolders" ofType="com.yoyo.gamecenter.model.AdvFolder" column="uId">
+            <id column="fId" property="fId"/>
+            <result column="pId" property="pId"/>
+            <result column="name" property="name"/>
+            <result column="createDate" property="createDate"/>
+            <result column="updateDate" property="updateDate"/>
+            <result column="createTime" property="createTime"/>
+            <result column="isDelete" property="isDelete"/>
+        </collection>
+
     </resultMap>
 
-    <select id="selectUserById" parameterType="java.lang.Long" resultMap="UserBaseMap">
+    <select id="selectUserById" parameterType="java.lang.Long" resultMap="UserMoreMap">
         SELECT u.*,t.*,r.* FROM t_user u LEFT JOIN t_terminal t ON t.uId = u.uId LEFT JOIN t_resource r on r.uId = t.uId
         WHERE  u.uId = #{userId}
     </select>
 
     <select id="selectUserByName" parameterType="java.lang.String" resultMap="UserBaseMap">
-        SELECT u.*,t.*,r.* FROM t_user u LEFT JOIN t_terminal t ON t.uId = u.uId LEFT JOIN t_resource r on r.uId = t.uId
+        SELECT u.*FROM t_user u
         WHERE u.user_name = #{userName}
     </select>
 
     <select id="selectUserByPhoneOrEmail" resultMap="UserBaseMap">
-        SELECT u.*,t.*,r.* FROM t_user u LEFT JOIN t_terminal t ON t.uId = u.uId LEFT JOIN t_resource r on r.uId = t.uId
+        SELECT u.*FROM t_user u
         WHERE u.user_email = #{emailOrPhone} OR u.user_phone = #{emailOrPhone}
     </select>
 
 
 
     <select id="selectAllUser" resultMap="UserBaseMap">
-        SELECT u.* ,t.*,r.* FROM t_user u LEFT JOIN t_terminal t ON t.uId = u.uId LEFT JOIN t_resource r on r.uId = t.uId
+        SELECT u.* FROM t_user u
     </select>
 
     <insert id="addUser" parameterType="com.yoyo.gamecenter.model.User">

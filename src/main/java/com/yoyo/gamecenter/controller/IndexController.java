@@ -41,5 +41,10 @@ public class IndexController {
     public String terminal(){
         return "/Menu/terminal";
     }
+
+    @RequestMapping("/menu/resource")
+    public String resource(){
+        return "Menu/resource";
+    }
 }
 

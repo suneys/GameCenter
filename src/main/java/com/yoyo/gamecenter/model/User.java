@@ -23,7 +23,16 @@ public class User {
     private Long userOutDate;   //找回密码的过期时间
     private String userSecretKey;   //找回密码的密钥
     private List<Terminal> terminals;   //绑定的终端
-    private List<Resource> resources;   //上次的资源
+    private List<Resource> resources;   //上传的资源
+    private List<AdvFolder> advFolders; //用户的文件夹
+
+    public List<AdvFolder> getAdvFolders() {
+        return advFolders;
+    }
+
+    public void setAdvFolders(List<AdvFolder> advFolders) {
+        this.advFolders = advFolders;
+    }
 
     public List<Resource> getResources() {
         return resources;
