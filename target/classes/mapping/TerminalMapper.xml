@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yoyo.gamecenter.dao.TermianlDao">
+
+    <resultMap id="TerminalBaseMap" type="com.yoyo.gamecenter.model.Terminal">
+        <id column="tId" property="tId" jdbcType="BIGINT"/>
+        <result column="terminalNo" property="terminalNo" jdbcType="NVARCHAR"/>
+        <result column="terminalName" property="terminalName" jdbcType="NVARCHAR"/>
+        <result column="publishState" property="publishState" jdbcType="SMALLINT"/>
+        <result column="isUpdate" property="isUpdate" jdbcType="SMALLINT"/>
+        <result column="createDate" property="createDate" jdbcType="DATE"/>
+        <result column="uId" property="uId" jdbcType="BIGINT"/>
+        <result column="activation" property="activation" jdbcType="SMALLINT"/>
+        <result column="activationDate" property="activationDate" jdbcType="DATE"/>
+        <result column="endDate" property="endDate" jdbcType="DATE"/>
+        <result column="agentId" property="agentId" jdbcType="BIGINT"/>
+        <result column="isDelete" property="isDelete" jdbcType="SMALLINT"/>
+        <result column="isOverdue" property="isOverdue" jdbcType="SMALLINT"/>
+        <result column="version" property="version" jdbcType="NVARCHAR"/>
+
+    </resultMap>
+    
+    <resultMap id="TerminalUserMap" type="com.yoyo.gamecenter.model.Terminal" extends="TerminalBaseMap">
+        <!-- 一对一的关系 -->
+        <!-- property: 指的是属性的值, javaType：指的是元素的类型 -->
+        <association property="user" javaType="com.yoyo.gamecenter.model.User">
+            <id column="uId" property="id" jdbcType="BIGINT"/>
+            <result column="user_name" property="userName" jdbcType="VARCHAR"/>
+            <result column="user_phone" property="userPhone" jdbcType="VARCHAR"/>
+            <result column="user_email" property="userEmail" jdbcType="VARCHAR"/>
+            <result column="user_pwd" property="userPwd" jdbcType="VARCHAR"/>
+            <result column="user_role" property="userRole" jdbcType="SMALLINT"/>
+            <result column="create_time" property="createTime" jdbcType="TIMESTAMP"/>
+            <result column="modify_time" property="modifyTime" jdbcType="TIMESTAMP"/>
+            <result column="is_enable" property="isEnable" jdbcType="SMALLINT"/>
+            <result column="is_delete" property="isDelete" jdbcType="SMALLINT"/>
+            <result column="user_DaySend" property="daySend" jdbcType="INTEGER"/>
+            <result column="user_TotalSend" property="totalSend" jdbcType="INTEGER"/>
+            <result column="user_outDate" property="userOutDate" jdbcType="BIGINT"/>
+            <result column="user_secretKey" property="userSecretKey" jdbcType="VARCHAR"/>
+        </association>
+    </resultMap>
+
+    <resultMap id="TerminalResource" type="com.yoyo.gamecenter.model.Terminal" extends="TerminalBaseMap">
+        <collection property="resources" ofType="com.yoyo.gamecenter.model.Resource" >
+            <id column="rId" property="rId" jdbcType="BIGINT"/>
+            <result column="fileName" property="fileName" jdbcType="NVARCHAR"/>
+            <result column="fileSize" property="fileSize" jdbcType="INTEGER"/>
+            <result column="path"     property="path"     jdbcType="NVARCHAR"/>
+            <result column="thumbPath" property="thumbPath" jdbcType="NVARCHAR"/>
+            <result column="createTime" property="createTime" jdbcType="TIMESTAMP"/>
+            <result column="isDelete" property="isDelete" jdbcType="SMALLINT"/>
+            <result column="souceType"     property="souceType"     jdbcType="INTEGER"/>
+            <result column="uId" property="uId" jdbcType="BIGINT"/>
+        </collection>
+    </resultMap>
+
+    <select id="selectTerminalById" parameterType="java.lang.Long" resultMap="TerminalUserMap">
+        SELECT u.*,t.* FROM  t_terminal t RIGHT JOIN t_user u ON u.uId = t.uId
+        WHERE  t.tId = #{terminalId}
+    </select>
+
+    <select id="selectTerminalByName" parameterType="java.lang.String" resultMap="TerminalBaseMap">
+        SELECT * FROM t_terminal t
+        WHERE  t.terminalName = #{terminalName}
+    </select>
+
+    <select id="selectTerminalByNo" parameterType="java.lang.String" resultMap="TerminalBaseMap">
+        SELECT * FROM t_terminal t
+        WHERE  t.terminalNo = #{terminalNo}
+    </select>
+
+    <select id="selectAllTerminalByUserId" parameterType="java.lang.Long" resultMap="TerminalResource">
+        SELECT t.*,r.* FROM t_terminal t LEFT JOIN resource_terminal rt
+        ON t.tId = rt.tId
+        LEFT JOIN t_resource r
+        ON r.rId = rt.rId
+        WHERE t.uId = #{uId}
+    </select>
+
+    <select id="queryByPage" resultMap="TerminalResource">
+        SELECT t.*,r.* FROM (SELECT * FROM t_terminal limit #{pageNo},#{pageSize}) t LEFT JOIN resource_terminal rt
+        ON t.tId = rt.tId
+        LEFT JOIN t_resource r
+        ON r.rId = rt.rId
+        WHERE t.uId = #{uId}
+        <if test="text != null">
+            AND t.terminalNo LIKE "%"#{text}"%" OR t.terminalName LIKE"%"#{text}"%"
+        </if>
+    </select>
+
+    <select id="getTerminalCount"  resultType="java.lang.Integer">
+        SELECT COUNT(*) AS count_value FROM t_terminal t WHERE t.uId = #{uId}
+        <if test="text != null">
+            AND t.terminalNo LIKE "%"#{text}"%" OR t.terminalName LIKE"%"#{text}"%"
+        </if>
+    </select>
+
+    <select id="selectAllTerminal" resultMap="TerminalBaseMap">
+        SELECT t.*  FROM t_terminal t
+    </select>
+
+    <insert id="addTerminal" parameterType="com.yoyo.gamecenter.model.Terminal">
+        INSERT INTO t_terminal
+        (
+        terminalNo,terminalName,publishState,isUpdate,createDate,uId,activation,activationDate,endDate,agentId,isDelete,isOverdue,version
+        )
+        VALUES
+        (
+        #{terminalNo,jdbcType=NVARCHAR},#{terminalName,jdbcType=NVARCHAR},#{publishState,jdbcType=SMALLINT},#{isUpdate,jdbcType=SMALLINT},
+        #{createDate,jdbcType=DATE},#{uId,jdbcType=BIGINT},#{activation,jdbcType=SMALLINT},#{activationDate,jdbcType=DATE},
+        #{endDate,jdbcType=DATE},#{agentId,jdbcType=BIGINT},#{isDelete,jdbcType=SMALLINT}, #{isOverdue,jdbcType=SMALLINT},#{version,jdbcType=NVARCHAR}
+        )
+    </insert>
+
+    <update id="updateTerminal" parameterType="com.yoyo.gamecenter.model.Terminal">
+        UPDATE t_terminal
+        <set>
+            <if test="terminalNo != null">
+                terminalNo = #{terminalNo,jdbcType=NVARCHAR},
+            </if>
+            <if test="terminalName != null">
+                terminalName = #{terminalName,jdbcType=NVARCHAR},
+            </if>
+            <if test="publishState != null">
+                publishState = #{publishState,jdbcType=SMALLINT},
+            </if>
+            <if test="isUpdate != null">
+                isUpdate = #{isUpdate,jdbcType=SMALLINT},
+            </if>
+            <if test="createDate != null">
+                createDate = #{createDate,jdbcType=DATE},
+            </if>
+            <if test="uId != null">
+                uId = #{uId,jdbcType=BIGINT},
+            </if>
+            <if test="activation != null">
+                activation = #{activation,jdbcType=SMALLINT},
+            </if>
+            <if test="activationDate != null">
+                activationDate = #{activationDate,jdbcType=DATE},
+            </if>
+            <if test="endDate != null">
+                endDate = #{endDate,jdbcType=DATE},
+            </if>
+            <if test="agentId != null">
+                agentId = #{agentId,jdbcType=BIGINT},
+            </if>
+            <if test="isDelete != null">
+                isDelete = #{isDelete,jdbcType=SMALLINT},
+            </if>
+            <if test="isOverdue != null">
+                isOverdue = #{isOverdue,jdbcType=SMALLINT},
+            </if>
+            <if test="version != null">
+                version = #{version,jdbcType=NVARCHAR}
+            </if>
+        </set>
+        where tId=#{tId,jdbcType=BIGINT}
+    </update>
+
+</mapper>

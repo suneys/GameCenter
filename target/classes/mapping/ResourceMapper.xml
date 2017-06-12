@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yoyo.gamecenter.dao.ResourceDao">
+
+    <resultMap id="ResourceBaseMap" type="com.yoyo.gamecenter.model.Resource">
+        <id column="rId" property="rId" jdbcType="BIGINT"/>
+        <result column="fileName" property="fileName" jdbcType="NVARCHAR"/>
+        <result column="fileSize" property="fileSize" jdbcType="INTEGER"/>
+        <result column="path" property="path" jdbcType="NVARCHAR"/>
+        <result column="thumbPath" property="thumbPath" jdbcType="NVARCHAR"/>
+        <result column="createTime" property="createTime" jdbcType="TIMESTAMP"/>
+        <result column="isDelete" property="isDelete" jdbcType="SMALLINT"/>
+        <result column="souceType" property="souceType" jdbcType="INTEGER"/>
+        <result column="activationDate" property="activationDate" jdbcType="DATE"/>
+        <result column="uId" property="uId" jdbcType="BIGINT"/>
+    </resultMap>
+    
+    <resultMap id="ResourceUserMap" type="com.yoyo.gamecenter.model.Resource" extends="ResourceBaseMap">
+        <!-- 一对一的关系 -->
+        <!-- property: 指的是属性的值, javaType：指的是元素的类型 -->
+        <association property="user" javaType="com.yoyo.gamecenter.model.User">
+            <id column="uId" property="id" jdbcType="BIGINT"/>
+            <result column="user_name" property="userName" jdbcType="VARCHAR"/>
+            <result column="user_phone" property="userPhone" jdbcType="VARCHAR"/>
+            <result column="user_email" property="userEmail" jdbcType="VARCHAR"/>
+            <result column="user_pwd" property="userPwd" jdbcType="VARCHAR"/>
+            <result column="user_role" property="userRole" jdbcType="SMALLINT"/>
+            <result column="create_time" property="createTime" jdbcType="TIMESTAMP"/>
+            <result column="modify_time" property="modifyTime" jdbcType="TIMESTAMP"/>
+            <result column="is_enable" property="isEnable" jdbcType="SMALLINT"/>
+            <result column="is_delete" property="isDelete" jdbcType="SMALLINT"/>
+            <result column="user_DaySend" property="daySend" jdbcType="INTEGER"/>
+            <result column="user_TotalSend" property="totalSend" jdbcType="INTEGER"/>
+            <result column="user_outDate" property="userOutDate" jdbcType="BIGINT"/>
+            <result column="user_secretKey" property="userSecretKey" jdbcType="VARCHAR"/>
+        </association>
+    </resultMap>
+
+    <resultMap id="ResourceTerminal" type="com.yoyo.gamecenter.model.Resource" extends="ResourceBaseMap">
+        <collection property="terminals" ofType="com.yoyo.gamecenter.model.Terminal">
+            <id column="tId" property="tId" jdbcType="BIGINT"/>
+            <result column="terminalNo" property="terminalNo" jdbcType="NVARCHAR"/>
+            <result column="terminalName" property="terminalName" jdbcType="NVARCHAR"/>
+            <result column="publishState" property="publishState" jdbcType="SMALLINT"/>
+            <result column="isUpdate" property="isUpdate" jdbcType="SMALLINT"/>
+            <result column="createDate" property="createDate" jdbcType="DATE"/>
+            <result column="uId" property="uId" jdbcType="BIGINT"/>
+            <result column="activation" property="activation" jdbcType="SMALLINT"/>
+            <result column="activationDate" property="activationDate" jdbcType="DATE"/>
+            <result column="endDate" property="endDate" jdbcType="DATE"/>
+            <result column="agentId" property="agentId" jdbcType="BIGINT"/>
+            <result column="isDelete" property="isDelete" jdbcType="SMALLINT"/>
+            <result column="isOverdue" property="isOverdue" jdbcType="SMALLINT"/>
+            <result column="version" property="version" jdbcType="NVARCHAR"/>
+        </collection>
+    </resultMap>
+
+    <select id="selectResourceById" parameterType="java.lang.Long" resultMap="ResourceUserMap">
+        SELECT u.*,r.* FROM  t_resource r RIGHT JOIN t_user u ON u.uId = r.uId
+        WHERE  t.rId = #{resourceId}
+    </select>
+
+    <select id="selectResourceByName" parameterType="java.lang.String" resultMap="ResourceBaseMap">
+        SELECT * FROM t_resource
+        WHERE  t.fileName = #{resourceName}
+    </select>
+
+    <select id="selectAllResourceByUserId" parameterType="java.lang.Long" resultMap="ResourceTerminal">
+        SELECT t.*,r.* FROM t_resource r LEFT JOIN resource_terminal rt
+        ON r.rId = rt.rId
+        LEFT JOIN t_terminal t
+        ON t.rId = rt.tId
+        WHERE r.uId = #{uId}
+    </select>
+
+    <select id="selectAllResource" resultMap="ResourceBaseMap">
+        SELECT t.*  FROM t_resource r
+    </select>
+
+    <insert id="addResource" parameterType="com.yoyo.gamecenter.model.Resource">
+        INSERT INTO t_resource
+        (
+        fileName,fileSize,path,thumbPath,createTime,isDelete,souceType,uId
+        )
+        VALUES
+        (
+        #{fileName,jdbcType=NVARCHAR},#{fileSize,jdbcType=INTEGER},#{path,jdbcType=NVARCHAR},#{thumbPath,jdbcType=NVARCHAR},
+        #{createTime,jdbcType=TIMESTAMP},#{isDelete,jdbcType=SMALLINT},#{souceType,jdbcType=INTEGER},#{uId,jdbcType=BIGINT}
+        )
+    </insert>
+
+    <update id="updateResource" parameterType="com.yoyo.gamecenter.model.Resource">
+        UPDATE t_resource
+        <set>
+            <if test="fileName != null">
+                fileName = #{terminalNo,jdbcType=NVARCHAR},
+            </if>
+            <if test="fileSize != null">
+                fileSize = #{fileSize,jdbcType=INTEGER},
+            </if>
+            <if test="path != null">
+                path = #{path,jdbcType=NVARCHAR},
+            </if>
+            <if test="thumbPath != null">
+                thumbPath = #{thumbPath,jdbcType=NVARCHAR},
+            </if>
+            <if test="createTime != null">
+                createTime = #{createTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="isDelete != null">
+                isDelete = #{isDelete,jdbcType=SMALLINT},
+            </if>
+            <if test="souceType != null">
+                souceType = #{souceType,jdbcType=INTEGER},
+            </if>
+            <if test="uId != null">
+                uId = #{uId,jdbcType=BIGINT},
+            </if>
+        </set>
+        where rId=#{rId,jdbcType=BIGINT}
+    </update>
+
+    <!--/*这种方式使用批量插入*/-->
+    <insert id="selectTerminals">
+
+        INSERT INTO resource_terminal
+        (rId,tId)
+        VALUES
+        <foreach collection="terminalIds" item="id" separator=",">
+            (#{resourceId}, #{id})
+        </foreach>
+
+    </insert>
+
+</mapper>
