@@ -39,10 +39,30 @@ public class ResourceServiceImpl implements ResourceService {
     }
 
     public List<Resource> getAllResourceByUserId(Long uId) {
-        return resourceDao.selectAllResourceByUserId(uId);
+        return resourceDao.selectAllResourceByUserId(uId, (short) 0);
+    }
+
+    public List<Resource> getAllResourceByFileId(long fId) {
+        return resourceDao.selectAllResourceByFileId(fId, (short) 0);
     }
 
     public void selectTerminals(Long resourceId, List<Long> termianlIds) {
         resourceDao.selectTerminals(resourceId,termianlIds);
+    }
+
+    public int getResourceCount(Long uId, String text) {
+        return resourceDao.getResourceCount(uId,text, (short) 0);
+    }
+
+    public List<Resource> queryByPage(Long uId, int pageNo, int pageSize) {
+        return resourceDao.queryByPage(uId,pageNo,pageSize, (short) 0);
+    }
+
+    public List<Resource> queryByPageInFile(Long fId, int pageNo, int pageSize) {
+        return resourceDao.queryByPageInFile(fId,pageNo,pageSize, (short) 0);
+    }
+
+    public int getResourceCountInFile(Long fId) {
+        return resourceDao.getResourceCountInFile(fId, (short) 0);
     }
 }

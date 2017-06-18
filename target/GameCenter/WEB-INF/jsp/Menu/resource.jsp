@@ -13,7 +13,7 @@
     <meta name="description" content="海报助手、数字广告牌、数字灯箱、数字海报、数字菜单、数字展架、数字白板、海报发布系统 研发 制造 生产"/>
     <meta name="keywords" content="海报助手、数字广告牌、数字灯箱、数字海报、数字菜单、数字展架、数字白板、海报发布系统 研发 制造 生产"/>
     <link rel="Shortcut Icon" href="http://image.smt-view.com/Style/Images/favicon.ico?ver=V1.189536"/>
-    <input type="hidden" name="Images_" id="Images_" value="http://image.smt-view.com"/>
+    <input type="hidden" name="Images_" id="Images_" value="http://localhost:8080/"/>
     <!--[if lt IE 9]>
     <meta http-equiv="refresh" content="0;ie.html"/>
     <![endif]-->
@@ -128,7 +128,7 @@
         </form>
     </div>
 </div>
-<input type="hidden" id="accept" value=".JPG,.PNG,.GIF,.BMP,.JPEG,,.MP4,.MP3"/>
+<input type="hidden" id="accept" value=".JPG,.PNG,.GIF,.BMP,.JPEG,.MP4,.MP3"/>
 <input type="hidden" id="SouceType" value="0"/>
 <input type="hidden" id="tid" value="0"/>
 <input type="hidden" id="fid" value="1"/>

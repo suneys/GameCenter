@@ -41,7 +41,7 @@ var capacity1=0,capacity2=0;
 function InitTable(pageindex) {
     $(".col-sm-12 div").remove();
     $.ajax({
-        url: "/Resource/ListShow/?Id=0&t=" + Math.random(),
+        url: getRootPath()+"/resource/list/?Id=0&t=" + Math.random(),
         type: 'POST',
         dataType: 'json',
         timeout: 30000,
@@ -127,7 +127,7 @@ function UploadFile(Id) {
             resetFileInput($(BtnFile));
             return false;
         };
-        $("#form2").attr("action", "/Resource/Upload/?Id=" + $("#fid").val() + "&t=" + Math.random());
+        $("#form2").attr("action", "/resource/upload/?Id=" + $("#fid").val() + "&t=" + Math.random());
         $("#s_submit").click();
     };
 };

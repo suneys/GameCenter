@@ -20,6 +20,10 @@ public class User {
     private Short isEnable;     //是否可用，0-不可用；1-可用
     private int daySend;        //当天发送的数量
     private int totalSend;      //总共发送的数量
+    private int totalSize;      //分配的容量，默认是500M
+    private int uploadSize;     //上传已用的容量
+    private String logoPath;    //企业logo路径
+
     private Long userOutDate;   //找回密码的过期时间
     private String userSecretKey;   //找回密码的密钥
     private List<Terminal> terminals;   //绑定的终端
@@ -161,6 +165,30 @@ public class User {
 
     public void setTotalSend(int totalSend) {
         this.totalSend = totalSend;
+    }
+
+    public int getTotalSize() {
+        return totalSize;
+    }
+
+    public void setTotalSize(int totalSize) {
+        this.totalSize = totalSize;
+    }
+
+    public int getUploadSize() {
+        return uploadSize;
+    }
+
+    public void setUploadSize(int uploadSize) {
+        this.uploadSize = uploadSize;
+    }
+
+    public String getLogoPath() {
+        return logoPath;
+    }
+
+    public void setLogoPath(String logoPath) {
+        this.logoPath = logoPath;
     }
 
     @Override

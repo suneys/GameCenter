@@ -17,6 +17,10 @@
         <result column="user_TotalSend" property="totalSend" jdbcType="INTEGER"/>
         <result column="user_outDate" property="userOutDate" jdbcType="BIGINT"/>
         <result column="user_secretKey" property="userSecretKey" jdbcType="VARCHAR"/>
+        <result column="user_TotalSize" property="totalSize" jdbcType="INTEGER"/>
+        <result column="user_UploadSize" property="uploadSize" jdbcType="INTEGER"/>
+        <result column="logoPath" property="logoPath" jdbcType="VARCHAR"/>
+
     </resultMap>
     <resultMap id="UserMoreMap" type="com.yoyo.gamecenter.model.User" extends="UserBaseMap">
         <!-- 一对多的关系 -->
@@ -46,6 +50,7 @@
             <result column="createTime" property="createTime"/>
             <result column="isDelete" property="isDelete"/>
             <result column="souceType" property="souceType"/>
+            <result column="fId" property="fId"/>
         </collection>
 
         <collection property="advFolders" ofType="com.yoyo.gamecenter.model.AdvFolder" column="uId">
@@ -54,7 +59,6 @@
             <result column="name" property="name"/>
             <result column="createDate" property="createDate"/>
             <result column="updateDate" property="updateDate"/>
-            <result column="createTime" property="createTime"/>
             <result column="isDelete" property="isDelete"/>
         </collection>
 
@@ -84,13 +88,16 @@
     <insert id="addUser" parameterType="com.yoyo.gamecenter.model.User">
         INSERT INTO t_user
         (
-        user_name,user_phone,user_email,user_pwd,user_role,create_time,modify_time,is_enable,is_delete,user_DaySend,user_TotalSend,user_outDate,user_secretKey
+        user_name,user_phone,user_email,user_pwd,user_role,create_time,modify_time,
+        is_enable,is_delete,user_DaySend,user_TotalSend,user_outDate,user_secretKey,
+        user_TotalSize,user_UploadSize,logoPath
         )
         VALUES
         (
           #{userName,jdbcType=VARCHAR},#{userPhone,jdbcType=VARCHAR},#{userEmail,jdbcType=VARCHAR},#{userPwd,jdbcType=VARCHAR},
           #{userRole,jdbcType=SMALLINT},#{createTime,jdbcType=TIMESTAMP},#{modifyTime,jdbcType=TIMESTAMP},#{isEnable,jdbcType=SMALLINT},
-          #{isDelete,jdbcType=SMALLINT},#{daySend,jdbcType=INTEGER},#{totalSend,jdbcType=INTEGER}, #{userOutDate,jdbcType=BIGINT},#{userSecretKey,jdbcType=VARCHAR}
+          #{isDelete,jdbcType=SMALLINT},#{daySend,jdbcType=INTEGER},#{totalSend,jdbcType=INTEGER}, #{userOutDate,jdbcType=BIGINT},#{userSecretKey,jdbcType=VARCHAR},
+          #{totalSize,jdbcType=INTEGER},#{uploadSize,jdbcType=INTEGER},#{logoPath,jdbcType=VARCHAR}
         )
     </insert>
     <update id="updateUser" parameterType="com.yoyo.gamecenter.model.User">
@@ -134,6 +141,15 @@
             </if>
             <if test="userSecretKey != null">
                 user_secretKey = #{userSecretKey,jdbcType=VARCHAR}
+            </if>
+            <if test="totalSize != null">
+                user_TotalSize = #{totalSize,jdbcType=INTEGER},
+            </if>
+            <if test="uploadSize != null">
+                user_UploadSize = #{uploadSize,jdbcType=INTEGER},
+            </if>
+            <if test="logoPath != null">
+                logoPath = #{logoPath,jdbcType=VARCHAR}
             </if>
         </set>
         where uId=#{id,jdbcType=BIGINT}

@@ -61,4 +61,10 @@ public class ResourceServiceImplTest extends TestCase {
 
     }
 
+    @Test
+    public void testGetResourceCount(){
+        int resourceCount = resourceService.getResourceCount((long) 6, null);
+        System.out.println(resourceCount);
+    }
+
 }

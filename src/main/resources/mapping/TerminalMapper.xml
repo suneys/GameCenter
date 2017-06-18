@@ -70,7 +70,7 @@
         WHERE  t.terminalNo = #{terminalNo}
     </select>
 
-    <select id="selectAllTerminalByUserId" parameterType="java.lang.Long" resultMap="TerminalResource">
+    <select id="selectAllTerminalByUserId"  resultMap="TerminalResource">
         SELECT t.*,r.* FROM t_terminal t LEFT JOIN resource_terminal rt
         ON t.tId = rt.tId
         LEFT JOIN t_resource r

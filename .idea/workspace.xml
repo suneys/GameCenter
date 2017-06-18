@@ -2,13 +2,52 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bda03f8c-2685-40a8-8dc7-10de52692b6e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/yoyo/gamecenter/model/User.class" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/images/diy/1_open.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/images/line_conn.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/images/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/images/zTreeStandard.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/images/zTreeStandard.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/controller/AdvFolderController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/controller/ResourceController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/dao/AdvFolderDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/service/AdvFolderService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/service/impl/AdvFolderServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/utils/ConvertUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/mapping/AdvFloderMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/test/com/yoyo/gamecenter/service/impl/AdvFolderServiceImplTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/GameCenter/WEB-INF/classes/com/yoyo/gamecenter/controller/IndexController.class" afterPath="$PROJECT_DIR$/target/GameCenter/WEB-INF/classes/com/yoyo/gamecenter/controller/IndexController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/GameCenter/WEB-INF/classes/com/yoyo/gamecenter/dao/ResourceDao.class" afterPath="$PROJECT_DIR$/target/GameCenter/WEB-INF/classes/com/yoyo/gamecenter/dao/ResourceDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/GameCenter/WEB-INF/classes/com/yoyo/gamecenter/model/Resource.class" afterPath="$PROJECT_DIR$/target/GameCenter/WEB-INF/classes/com/yoyo/gamecenter/model/Resource.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/GameCenter/WEB-INF/classes/com/yoyo/gamecenter/model/User.class" afterPath="$PROJECT_DIR$/target/GameCenter/WEB-INF/classes/com/yoyo/gamecenter/model/User.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/GameCenter/WEB-INF/classes/com/yoyo/gamecenter/service/ResourceService.class" afterPath="$PROJECT_DIR$/target/GameCenter/WEB-INF/classes/com/yoyo/gamecenter/service/ResourceService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/GameCenter/WEB-INF/classes/com/yoyo/gamecenter/service/impl/ResourceServiceImpl.class" afterPath="$PROJECT_DIR$/target/GameCenter/WEB-INF/classes/com/yoyo/gamecenter/service/impl/ResourceServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/yoyo/gamecenter/controller/IndexController.class" afterPath="$PROJECT_DIR$/target/classes/com/yoyo/gamecenter/controller/IndexController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/yoyo/gamecenter/dao/ResourceDao.class" afterPath="$PROJECT_DIR$/target/classes/com/yoyo/gamecenter/dao/ResourceDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/yoyo/gamecenter/model/Resource.class" afterPath="$PROJECT_DIR$/target/classes/com/yoyo/gamecenter/model/Resource.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/yoyo/gamecenter/model/User.class" afterPath="$PROJECT_DIR$/target/classes/com/yoyo/gamecenter/model/User.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/yoyo/gamecenter/service/ResourceService.class" afterPath="$PROJECT_DIR$/target/classes/com/yoyo/gamecenter/service/ResourceService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/yoyo/gamecenter/service/impl/ResourceServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/yoyo/gamecenter/service/impl/ResourceServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/yoyo/gamecenter/service/impl/ResourceServiceImplTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/yoyo/gamecenter/service/impl/ResourceServiceImplTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/GameCenter/WEB-INF/jsp/Menu/index.jsp" afterPath="$PROJECT_DIR$/target/GameCenter/WEB-INF/jsp/Menu/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/ssm.log" afterPath="$PROJECT_DIR$/logs/ssm.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/SQL/t_resource.sql" afterPath="$PROJECT_DIR$/src/main/java/SQL/t_resource.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/controller/IndexController.java" afterPath="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/controller/IndexController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/dao/ResourceDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/dao/ResourceDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/model/Resource.java" afterPath="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/model/Resource.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/model/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/model/User.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/service/ResourceService.java" afterPath="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/service/ResourceService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/service/impl/ResourceServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/service/impl/ResourceServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapping/ResourceMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapping/ResourceMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapping/TerminalMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapping/TerminalMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapping/UserMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapping/UserMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/test/com/yoyo/gamecenter/service/impl/ResourceServiceImplTest.java" afterPath="$PROJECT_DIR$/src/main/test/com/yoyo/gamecenter/service/impl/ResourceServiceImplTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/Menu/resource.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/Menu/resource.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/adv_Folder.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/adv_Folder.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/adv_Resource.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/adv_Resource.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/GameCenter/WEB-INF/classes/mapping/ResourceMapper.xml" afterPath="$PROJECT_DIR$/target/GameCenter/WEB-INF/classes/mapping/ResourceMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/GameCenter/WEB-INF/classes/mapping/UserMapper.xml" afterPath="$PROJECT_DIR$/target/GameCenter/WEB-INF/classes/mapping/UserMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/GameCenter/WEB-INF/jsp/Menu/resource.jsp" afterPath="$PROJECT_DIR$/target/GameCenter/WEB-INF/jsp/Menu/resource.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/GameCenter/WEB-INF/jsp/Menu/terminal.jsp" afterPath="$PROJECT_DIR$/target/GameCenter/WEB-INF/jsp/Menu/terminal.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapping/ResourceMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapping/ResourceMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapping/UserMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapping/UserMapper.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -26,51 +65,73 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="t_terminal.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/SQL/t_terminal.sql">
+      <file leaf-file-name="ResourceController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/controller/ResourceController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="119">
+              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConvertUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/utils/ConvertUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="305">
+              <caret line="37" column="18" lean-forward="false" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="resource.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/Menu/resource.jsp">
+      <file leaf-file-name="ResourceMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/ResourceMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="92" column="63" lean-forward="true" selection-start-line="92" selection-start-column="63" selection-end-line="92" selection-end-column="63" />
+            <state relative-caret-position="-1377">
+              <caret line="15" column="63" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="63" />
               <folding>
-                <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1497800090087" expanded="true" signature="4003:4110" ph="SELECT u.*,r... t_resource" />
+                <marker date="1497800090087" expanded="true" signature="4234:4302" ph="SELECT * FRO... t_resource" />
+                <marker date="1497800090087" expanded="true" signature="4399:4574" ph="SELECT t.*,r... t_resource" />
+                <marker date="1497800090087" expanded="true" signature="4399:4603" ph="SELECT t.*,r... t_resource" />
+                <marker date="1497800090087" expanded="true" signature="4700:4749" ph="SELECT t.* F... t_resource" />
+                <marker date="1497800090087" expanded="true" signature="4700:4778" ph="SELECT t.* F... t_resource" />
+                <marker date="1497800090087" expanded="true" signature="5154:5252" ph="SELECT COUNT... t_resource" />
+                <marker date="1497800090087" expanded="true" signature="5330:5456" ph="SELECT r.* F... *" />
+                <marker date="1497800090087" expanded="true" signature="5347:5399" ph="SELECT * FRO... t_resource" />
+                <marker date="1497800090087" expanded="true" signature="5544:5674" ph="SELECT r.* F... *" />
+                <marker date="1497800090087" expanded="true" signature="5561:5613" ph="SELECT * FRO... t_resource" />
+                <marker date="1497800090087" expanded="true" signature="5762:5791" ph="SELECT t.* F... t_resource" />
+                <marker date="1497800090087" expanded="true" signature="5896:6324" ph="INSERT INTO t_resource... " />
+                <marker date="1497800090087" expanded="true" signature="6432:7539" ph="UPDATE t_res... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/model/User.java">
+      <file leaf-file-name="adv_Resource.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/adv_Resource.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="26" column="20" lean-forward="true" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+            <state relative-caret-position="734">
+              <caret line="65" column="119" lean-forward="false" selection-start-line="65" selection-start-column="110" selection-end-line="65" selection-end-column="119" />
               <folding>
-                <element signature="e#931#932#0" expanded="true" />
-                <element signature="e#964#965#0" expanded="true" />
-                <element signature="e#1025#1026#0" expanded="true" />
-                <element signature="e#1069#1070#0" expanded="true" />
+                <marker date="1497792904531" expanded="true" signature="1789:1799" ph="..." />
+                <marker date="1497792904531" expanded="true" signature="1858:1868" ph="..." />
+                <marker date="1497792904531" expanded="true" signature="2427:2451" ph="..." />
+                <marker date="1497792904531" expanded="true" signature="2880:2892" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdvFolder.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/model/AdvFolder.java">
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="783">
-              <caret line="67" column="0" lean-forward="true" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+            <state relative-caret-position="119">
+              <caret line="102" column="0" lean-forward="false" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -79,35 +140,25 @@
       <file leaf-file-name="UserMapper.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/UserMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="891">
-              <caret line="57" column="59" lean-forward="true" selection-start-line="57" selection-start-column="59" selection-end-line="57" selection-end-column="59" />
+            <state relative-caret-position="189">
+              <caret line="52" column="49" lean-forward="true" selection-start-line="52" selection-start-column="49" selection-end-line="52" selection-end-column="49" />
               <folding>
-                <marker date="1497276195462" expanded="true" signature="3701:3846" ph="SELECT u.*,t... t_user" />
-                <marker date="1497276195462" expanded="true" signature="3962:4025" ph="SELECT u.*FR... t_user" />
-                <marker date="1497276195462" expanded="true" signature="4116:4218" ph="SELECT u.*FR... t_user" />
-                <marker date="1497276195462" expanded="true" signature="4300:4324" ph="SELECT u.* F... t_user" />
-                <marker date="1497276195462" expanded="true" signature="4421:5082" ph="INSERT INTO t_user... " />
-                <marker date="1497276195462" expanded="true" signature="5181:6836" ph="UPDATE t_use... " />
+                <marker date="1497800090044" expanded="true" signature="3929:4074" ph="SELECT u.*,t... t_user" />
+                <marker date="1497800090044" expanded="true" signature="4190:4253" ph="SELECT u.*FR... t_user" />
+                <marker date="1497800090044" expanded="true" signature="4344:4446" ph="SELECT u.*FR... t_user" />
+                <marker date="1497800090044" expanded="true" signature="4528:4552" ph="SELECT u.* F... t_user" />
+                <marker date="1497800090044" expanded="true" signature="4649:5469" ph="INSERT INTO t_user... " />
+                <marker date="1497800090044" expanded="true" signature="5568:7589" ph="UPDATE t_use... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/controller/UserController.java">
+      <file leaf-file-name="ResourceDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/dao/ResourceDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2025">
-              <caret line="45" column="25" lean-forward="false" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="adv_Folder.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/adv_Folder.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="37" column="44" lean-forward="true" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
+            <state relative-caret-position="459">
+              <caret line="32" column="30" lean-forward="false" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -116,35 +167,30 @@
       <file leaf-file-name="IndexController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/controller/IndexController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="45" column="29" lean-forward="false" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
-              <folding>
-                <element signature="e#1509#1510#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/Menu/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="119" column="86" lean-forward="true" selection-start-line="119" selection-start-column="86" selection-end-line="119" selection-end-column="86" />
+            <state relative-caret-position="143">
+              <caret line="42" column="56" lean-forward="false" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="56" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="adv_Resource.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/adv_Resource.js">
+      <file leaf-file-name="public.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/public.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-741">
-              <caret line="64" column="146" lean-forward="false" selection-start-line="64" selection-start-column="146" selection-end-line="64" selection-end-column="146" />
+            <state relative-caret-position="131">
+              <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdvFolderController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/controller/AdvFolderController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
               <folding>
-                <marker date="1497272600174" expanded="true" signature="1779:1789" ph="..." />
-                <marker date="1497272600174" expanded="true" signature="1848:1858" ph="..." />
-                <marker date="1497272600174" expanded="true" signature="2417:2441" ph="..." />
-                <marker date="1497272600174" expanded="true" signature="2870:2882" ph="..." />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -157,10 +203,10 @@
       <list>
         <option value="CSS File" />
         <option value="JavaScript File" />
-        <option value="Interface" />
         <option value="JUnit3 Test Class" />
-        <option value="JUnit4 Test Class" />
         <option value="Jsp File" />
+        <option value="Interface" />
+        <option value="JUnit4 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -182,10 +228,25 @@
       <find>sort</find>
       <find>order</find>
       <find>Images_</find>
+      <find>programNum</find>
+      <find>1_open.png</find>
+      <find>background</find>
+      <find>makeNodeIcoStyle</find>
+      <find>setNodeLineIcos</find>
+      <find>callback</find>
+      <find>beforeRename</find>
+      <find>SouceType</find>
+      <find>total</find>
+      <find>capacity</find>
     </findStrings>
     <replaceStrings>
       <replace>indexOf</replace>
     </replaceStrings>
+    <dirStrings>
+      <dir>F:\workSpace\JavaEE\GameCenter\src\main\webapp\images</dir>
+      <dir>F:\workSpace\JavaEE\GameCenter\src\main\webapp\css</dir>
+      <dir>F:\workSpace\JavaEE\GameCenter\src\main\webapp\js</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
@@ -204,29 +265,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/js/login.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/utils/InfoUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/utils/ResponseUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/adv_GetPassword_email.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/dao/UserDao.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/error.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/getPassword.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/intereceptor/LoginInterceptor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/adv_ResetPassword_email.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/resetPassword.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/controller/AuthCodeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/SQL/t_terminal.sql" />
         <option value="$PROJECT_DIR$/src/main/test/TestTerminal.java" />
         <option value="$PROJECT_DIR$/src/main/test/com/yoyo/gamecenter/service/impl/UserServiceImplTest.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/SQL/t_resource.sql" />
         <option value="$PROJECT_DIR$/src/main/java/SQL/resource_terminal.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/model/Resource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/dao/ResourceDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/service/ResourceService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/service/impl/ResourceServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/model/Terminal.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/index.js" />
@@ -234,26 +278,43 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/Menu/home.jsp" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/spring-mybatis.xml" />
-        <option value="$PROJECT_DIR$/src/main/test/com/yoyo/gamecenter/service/impl/ResourceServiceImplTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapping/ResourceMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/test/com/yoyo/gamecenter/service/impl/TerminalServiceImplTest.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/mesageinfo.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/dao/TermianlDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/service/TerminalService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/service/impl/TerminalServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/adv_Terminals.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapping/TerminalMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/controller/TerminalController.java" />
         <option value="$PROJECT_DIR$/src/main/java/SQL/t_floder.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/model/advFolder.java" />
         <option value="$PROJECT_DIR$/target/GameCenter/WEB-INF/jsp/Menu/resource.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/Menu/resource.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/Menu/terminal.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/controller/IndexController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/Menu/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/model/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/model/AdvFolder.java" />
+        <option value="$PROJECT_DIR$/src/main/test/com/yoyo/gamecenter/service/impl/ResourceServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/controller/IndexController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/dao/FolderDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/service/AdvFloderService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/service/AdvFolderService.java" />
+        <option value="$PROJECT_DIR$/src/main/test/com/yoyo/gamecenter/service/impl/AdvFolderServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/adv_Folder.js" />
+        <option value="$PROJECT_DIR$/src/main/java/SQL/t_resource.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/model/Resource.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/Menu/resource.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/model/User.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/adv_Resource.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/dao/TermianlDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/dao/AdvFolderDao.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapping/AdvFloderMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/service/impl/AdvFolderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/controller/AdvFolderController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapping/TerminalMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/dao/ResourceDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/service/ResourceService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/service/impl/ResourceServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/utils/ConvertUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/controller/ResourceController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapping/ResourceMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mapping/UserMapper.xml" />
       </list>
     </option>
@@ -362,9 +423,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -398,6 +458,120 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="target" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GameCenter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GameCenter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GameCenter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GameCenter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GameCenter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GameCenter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GameCenter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GameCenter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GameCenter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="diy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GameCenter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GameCenter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="classes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GameCenter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GameCenter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="classes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yoyo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gamecenter" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -557,29 +731,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
+              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GameCenter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GameCenter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
+              <option name="myItemId" value="impl" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -712,6 +868,44 @@
               <option name="myItemId" value="gamecenter" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GameCenter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GameCenter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gamecenter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="impl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -768,6 +962,62 @@
               <option name="myItemId" value="gamecenter" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GameCenter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GameCenter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gamecenter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GameCenter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GameCenter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gamecenter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -775,6 +1025,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -794,19 +1045,20 @@
       <recent name="com.yoyo.gamecenter.service.impl" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.yoyo.gamecenter.service.impl" />
       <recent name="com.yoyo.gamecenter.service" />
       <recent name="com.yoyo.gamecenter.dao" />
-      <recent name="com.yoyo.gamecenter.service.impl" />
       <recent name="com.yoyo.gamecenter.model" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\workSpace\JavaEE\GameCenter\src\main\java\com\yoyo\gamecenter\utils" />
+      <recent name="F:\workSpace\JavaEE\GameCenter\target\GameCenter\images\diy" />
+      <recent name="F:\workSpace\JavaEE\GameCenter\src\main\webapp\images\diy" />
+      <recent name="F:\workSpace\JavaEE\GameCenter\src\main\webapp\images" />
       <recent name="F:\workSpace\JavaEE\GameCenter\src\main\webapp\css" />
-      <recent name="F:\workSpace\JavaEE\GameCenter\src\main\webapp\js" />
-      <recent name="F:\workSpace\JavaEE\GameCenter\src\main\webapp\js\ztree" />
-      <recent name="F:\workSpace\JavaEE\GameCenter\src\main\webapp\WEB-INF\jsp\Menu" />
+      <recent name="F:\workSpace\JavaEE\GameCenter\src\main\java\com\yoyo\gamecenter\utils" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
       <recent name="junit.framework.TestCase" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -878,58 +1130,6 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="ResourceServiceImplTest.addResource" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.yoyo.gamecenter.service.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="GameCenter" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.yoyo.gamecenter.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.yoyo.gamecenter.service.impl.ResourceServiceImplTest" />
-      <option name="METHOD_NAME" value="addResource" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="TerminalServiceImplTest.testGetAllTerminal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.yoyo.gamecenter.service.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="GameCenter" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.yoyo.gamecenter.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.yoyo.gamecenter.service.impl.TerminalServiceImplTest" />
-      <option name="METHOD_NAME" value="testGetAllTerminal" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
     <configuration default="false" name="TerminalServiceImplTest.testGetTerminalCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -943,6 +1143,58 @@
       <option name="PACKAGE_NAME" value="com.yoyo.gamecenter.service.impl" />
       <option name="MAIN_CLASS_NAME" value="com.yoyo.gamecenter.service.impl.TerminalServiceImplTest" />
       <option name="METHOD_NAME" value="testGetTerminalCount" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ResourceServiceImplTest.testGetResourceCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.yoyo.gamecenter.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="GameCenter" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.yoyo.gamecenter.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.yoyo.gamecenter.service.impl.ResourceServiceImplTest" />
+      <option name="METHOD_NAME" value="testGetResourceCount" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="AdvFolderServiceImplTest.addAdvFolder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.yoyo.gamecenter.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="GameCenter" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.yoyo.gamecenter.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.yoyo.gamecenter.service.impl.AdvFolderServiceImplTest" />
+      <option name="METHOD_NAME" value="addAdvFolder" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1423,17 +1675,17 @@
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Tomcat7.0.61" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.TerminalServiceImplTest.testSelectAllTerminalsByUserId" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.TerminalServiceImplTest.testQueryByPage" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ResourceServiceImplTest.addResource" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TerminalServiceImplTest.testGetAllTerminal" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.TerminalServiceImplTest.testGetTerminalCount" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TerminalServiceImplTest.testGetTerminalCount" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ResourceServiceImplTest.testGetResourceCount" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.AdvFolderServiceImplTest.addAdvFolder" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TerminalServiceImplTest.testGetTerminalCount" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TerminalServiceImplTest.testQueryByPage" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.TerminalServiceImplTest.testSelectAllTerminalsByUserId" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.TerminalServiceImplTest.testGetAllTerminal" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ResourceServiceImplTest.addResource" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.AdvFolderServiceImplTest.addAdvFolder" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ResourceServiceImplTest.testGetResourceCount" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TerminalServiceImplTest.testGetTerminalCount" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TerminalServiceImplTest.testQueryByPage" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.TerminalServiceImplTest.testSelectAllTerminalsByUserId" />
       </list>
     </recent_temporary>
   </component>
@@ -1494,7 +1746,11 @@
       <workItem from="1497170083526" duration="13191000" />
       <workItem from="1497233171719" duration="847000" />
       <workItem from="1497234157180" duration="706000" />
-      <workItem from="1497242993531" duration="7758000" />
+      <workItem from="1497242993531" duration="7932000" />
+      <workItem from="1497276945879" duration="30000" />
+      <workItem from="1497443859376" duration="6905000" />
+      <workItem from="1497613986717" duration="8560000" />
+      <workItem from="1497773738524" duration="17670000" />
     </task>
     <task id="LOCAL-00001" summary="添加资源模块">
       <created>1497276727726</created>
@@ -1503,30 +1759,37 @@
       <option name="project" value="LOCAL" />
       <updated>1497276727726</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="添加资源模块">
+      <created>1497276741306</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1497276741306</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TerminalServiceImplTest_testGetTerminalCount - 2017.06.10 at 23h 16m 37s.xml">
-      <configuration name="TerminalServiceImplTest.testGetTerminalCount" configurationId="JUnit" />
+    <history-entry file="AdvFolderServiceImplTest_addAdvFolder - 2017.06.14 at 22h 14m 01s.xml">
+      <configuration name="AdvFolderServiceImplTest.addAdvFolder" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TerminalServiceImplTest_testGetTerminalCount - 2017.06.10 at 23h 17m 35s.xml">
-      <configuration name="TerminalServiceImplTest.testGetTerminalCount" configurationId="JUnit" />
+    <history-entry file="AdvFolderServiceImplTest_addAdvFolder - 2017.06.14 at 22h 15m 53s.xml">
+      <configuration name="AdvFolderServiceImplTest.addAdvFolder" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TerminalServiceImplTest_testGetTerminalCount - 2017.06.10 at 23h 18m 47s.xml">
-      <configuration name="TerminalServiceImplTest.testGetTerminalCount" configurationId="JUnit" />
+    <history-entry file="AdvFolderServiceImplTest_addAdvFolder - 2017.06.14 at 22h 21m 16s.xml">
+      <configuration name="AdvFolderServiceImplTest.addAdvFolder" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TerminalServiceImplTest_testGetTerminalCount - 2017.06.10 at 23h 20m 21s.xml">
-      <configuration name="TerminalServiceImplTest.testGetTerminalCount" configurationId="JUnit" />
+    <history-entry file="AdvFolderServiceImplTest_addAdvFolder - 2017.06.14 at 22h 23m 50s.xml">
+      <configuration name="AdvFolderServiceImplTest.addAdvFolder" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TerminalServiceImplTest_testGetTerminalCount - 2017.06.10 at 23h 20m 38s.xml">
-      <configuration name="TerminalServiceImplTest.testGetTerminalCount" configurationId="JUnit" />
+    <history-entry file="AdvFolderServiceImplTest_addAdvFolder - 2017.06.16 at 20h 23m 56s.xml">
+      <configuration name="AdvFolderServiceImplTest.addAdvFolder" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TerminalServiceImplTest_testGetTerminalCount - 2017.06.10 at 23h 23m 18s.xml">
-      <configuration name="TerminalServiceImplTest.testGetTerminalCount" configurationId="JUnit" />
+    <history-entry file="ResourceServiceImplTest_testGetResourceCount - 2017.06.14 at 21h 03m 43s.xml">
+      <configuration name="ResourceServiceImplTest.testGetResourceCount" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TerminalServiceImplTest_testGetTerminalCount - 2017.06.10 at 23h 25m 51s.xml">
-      <configuration name="TerminalServiceImplTest.testGetTerminalCount" configurationId="JUnit" />
+    <history-entry file="ResourceServiceImplTest_testGetResourceCount - 2017.06.14 at 21h 03m 55s.xml">
+      <configuration name="ResourceServiceImplTest.testGetResourceCount" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TerminalServiceImplTest_testGetTerminalCount - 2017.06.10 at 23h 31m 15s.xml">
       <configuration name="TerminalServiceImplTest.testGetTerminalCount" configurationId="JUnit" />
@@ -1539,7 +1802,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="193473000" />
+    <option name="totallyTimeSpent" value="226812000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1552,7 +1815,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1568,18 +1831,18 @@
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40782124" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.406993" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32587412" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1972028" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1972028" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25034964" sideWeight="0.49745455" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2901146" sideWeight="0.49056605" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25358167" sideWeight="0.49056605" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24641834" sideWeight="0.509434" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32867134" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1653,8 +1916,20 @@
           <properties />
           <option name="timeStamp" value="30" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/test/com/yoyo/gamecenter/service/impl/ResourceServiceImplTest.java</url>
+          <line>66</line>
+          <properties />
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/controller/AdvFolderController.java</url>
+          <line>58</line>
+          <properties />
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="31" />
+      <option name="time" value="40" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
@@ -1667,217 +1942,56 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/bootstrap-editable.css">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="78" column="4" lean-forward="false" selection-start-line="78" selection-start-column="4" selection-end-line="78" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/ztree/jquery.ztree.excheck-3.5.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/popupSmallMenu.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3307">
-          <caret line="151" column="0" lean-forward="false" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
+        <state relative-caret-position="243">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/service/UserService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="18" column="19" lean-forward="false" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/model/Terminal.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/Menu/terminal.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2430">
-          <caret line="155" column="18" lean-forward="false" selection-start-line="155" selection-start-column="18" selection-end-line="155" selection-end-column="18" />
+        <state relative-caret-position="1537">
+          <caret line="187" column="0" lean-forward="true" selection-start-line="187" selection-start-column="0" selection-end-line="187" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/model/Resource.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/Menu/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="17" column="20" lean-forward="false" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/intereceptor/LoginInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="14" column="16" lean-forward="false" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/service/ResourceService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="24" column="66" lean-forward="false" selection-start-line="24" selection-start-column="66" selection-end-line="24" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/service/impl/ResourceServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="18" column="36" lean-forward="false" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/utils/ResponseUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="22" column="32" lean-forward="true" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+        <state relative-caret-position="3213">
+          <caret line="119" column="86" lean-forward="false" selection-start-line="119" selection-start-column="86" selection-end-line="119" selection-end-column="86" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-27">
+        <state relative-caret-position="27">
           <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/4.2.5.RELEASE/spring-tx-4.2.5.RELEASE.jar!/org/springframework/transaction/interceptor/TransactionAspectSupport.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="158" column="0" lean-forward="false" selection-start-line="158" selection-start-column="0" selection-end-line="158" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.5.RELEASE/spring-aop-4.2.5.RELEASE.jar!/org/springframework/aop/framework/JdkDynamicAopProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="143" column="33" lean-forward="true" selection-start-line="143" selection-start-column="33" selection-end-line="143" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.5.RELEASE/spring-aop-4.2.5.RELEASE.jar!/org/springframework/aop/support/AopUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="164" column="0" lean-forward="false" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/public.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/test/com/yoyo/gamecenter/service/impl/TerminalServiceImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="75" column="56" lean-forward="false" selection-start-line="75" selection-start-column="56" selection-end-line="75" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/Menu/home.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="83" column="61" lean-forward="true" selection-start-line="83" selection-start-column="61" selection-end-line="83" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.2.5.RELEASE/spring-web-4.2.5.RELEASE.jar!/org/springframework/web/bind/annotation/support/HandlerMethodInvoker.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="158" column="0" lean-forward="false" selection-start-line="158" selection-start-column="0" selection-end-line="158" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/adv_Programme.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1323">
-          <caret line="49" column="9" lean-forward="false" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/service/TerminalService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="17" column="48" lean-forward="false" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/dao/TermianlDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="17" column="50" lean-forward="false" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/mesageinfo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5859">
-          <caret line="231" column="15" lean-forward="false" selection-start-line="231" selection-start-column="15" selection-end-line="231" selection-end-column="15" />
-          <folding>
-            <marker date="1497242837002" expanded="true" signature="0:53" ph="/** Created by Administrator on 2017/5/11 0011. ...*/" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/bootstrap-table-zh-CN.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2997">
-          <caret line="116" column="9" lean-forward="false" selection-start-line="116" selection-start-column="9" selection-end-line="116" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/controller/AuthCodeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1863">
-          <caret line="230" column="0" lean-forward="false" selection-start-line="230" selection-start-column="0" selection-end-line="230" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readMe.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/controller/TerminalController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="66" column="5" lean-forward="false" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logs/ssm.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-21376">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/adv_Terminals.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="57" column="28" lean-forward="false" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1892,28 +2006,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/TerminalMapper.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/Menu/home.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-567">
-          <caret line="9" column="75" lean-forward="false" selection-start-line="9" selection-start-column="75" selection-end-line="9" selection-end-column="75" />
-          <folding>
-            <marker date="1497242836925" expanded="true" signature="3857:3964" ph="SELECT u.*,t... t_terminal" />
-            <marker date="1497242836925" expanded="true" signature="4088:4162" ph="SELECT * FRO... t_terminal" />
-            <marker date="1497242836925" expanded="true" signature="4284:4354" ph="SELECT * FRO... t_terminal" />
-            <marker date="1497242836925" expanded="true" signature="4482:4657" ph="SELECT t.*,r... t_terminal" />
-            <marker date="1497242836925" expanded="true" signature="4761:4813" ph="SELECT * FRO... t_terminal" />
-            <marker date="1497242836925" expanded="true" signature="5469:5498" ph="SELECT t.* F... t_terminal" />
-            <marker date="1497242836925" expanded="true" signature="5603:6232" ph="INSERT INTO t_terminal... " />
-            <marker date="1497242836925" expanded="true" signature="6340:7970" ph="UPDATE t_ter... " />
-          </folding>
+        <state relative-caret-position="108">
+          <caret line="73" column="54" lean-forward="false" selection-start-line="73" selection-start-column="44" selection-end-line="73" selection-end-column="54" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SQL/t_user.sql">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.2.5.RELEASE/spring-web-4.2.5.RELEASE.jar!/org/springframework/web/bind/annotation/support/HandlerMethodInvoker.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="30" />
-          <folding />
+        <state relative-caret-position="131">
+          <caret line="158" column="0" lean-forward="false" selection-start-line="158" selection-start-column="0" selection-end-line="158" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1921,190 +2025,397 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-54">
+          <caret line="14" column="16" lean-forward="false" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/test/com/yoyo/gamecenter/service/impl/ResourceServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="19" column="82" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="19" selection-end-column="82" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/test/com/yoyo/gamecenter/service/impl/AdvFolderServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="45" column="28" lean-forward="true" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/adv_Terminals.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="57" column="28" lean-forward="false" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="28" />
+          <folding>
+            <marker date="1497242836980" expanded="true" signature="3293:3299" ph="&amp;nbsp;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/zTreeStandard.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/zTreeStandard.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/ztree/jquery.popupSmallMenu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/zTreeStyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/ztree/jquery.ztree.core-3.5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44280">
+          <caret line="1651" column="44" lean-forward="false" selection-start-line="1651" selection-start-column="29" selection-end-line="1651" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/ztree/jquery.ztree.exedit-3.5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-255">
+          <caret line="835" column="49" lean-forward="false" selection-start-line="835" selection-start-column="49" selection-end-line="835" selection-end-column="49" />
+          <folding>
+            <marker date="1497272577206" expanded="true" signature="28068:28176" ph="..." />
+            <marker date="1497272577206" expanded="true" signature="28879:28892" ph="..." />
+            <marker date="1497272577206" expanded="true" signature="29760:29773" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/controller/TerminalController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="74" column="67" lean-forward="true" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/service/AdvFolderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="14" column="35" lean-forward="false" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/model/Resource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="103" column="26" lean-forward="false" selection-start-line="103" selection-start-column="26" selection-end-line="103" selection-end-column="26" />
+          <folding>
+            <element signature="e#2219#2220#0" expanded="true" />
+            <element signature="e#2255#2256#0" expanded="true" />
+            <element signature="e#2285#2286#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/SQL/t_terminal.sql">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-174">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SQL/t_resource.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="53" lean-forward="true" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SQL/resource_terminal.sql">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/GameCenter/WEB-INF/jsp/Menu/terminal.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/mesageinfo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-648">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="27">
+          <caret line="122" column="9" lean-forward="false" selection-start-line="122" selection-start-column="9" selection-end-line="122" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/GameCenter/WEB-INF/jsp/Menu/resource.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state relative-caret-position="1072">
+          <caret line="182" column="23" lean-forward="false" selection-start-line="182" selection-start-column="13" selection-end-line="182" selection-end-column="23" />
           <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ul#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#0;n#ul#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#li#0;n#ul#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#2;n#li#0;n#ul#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#3753#3754#0" expanded="true" />
+            <element signature="e#3785#3786#0" expanded="true" />
+            <element signature="e#3832#3833#0" expanded="true" />
+            <element signature="e#3874#3875#0" expanded="true" />
+            <element signature="e#3908#3909#0" expanded="true" />
+            <element signature="e#3941#3942#0" expanded="true" />
+            <element signature="e#3990#3991#0" expanded="true" />
+            <element signature="e#4034#4035#0" expanded="true" />
+            <element signature="e#4069#4070#0" expanded="true" />
+            <element signature="e#4100#4101#0" expanded="true" />
+            <element signature="e#4148#4149#0" expanded="true" />
+            <element signature="e#4188#4189#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/adv_Folder.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="78" column="4" lean-forward="false" selection-start-line="78" selection-start-column="4" selection-end-line="78" selection-end-column="4" />
+        <state relative-caret-position="135">
+          <caret line="57" column="29" lean-forward="true" selection-start-line="57" selection-start-column="15" selection-end-line="57" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/ztree/jquery.ztree.excheck-3.5.js">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/model/AdvFolder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="69">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/popupSmallMenu.css">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/dao/AdvFolderDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="135">
+          <caret line="17" column="96" lean-forward="false" selection-start-line="17" selection-start-column="96" selection-end-line="17" selection-end-column="96" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/AdvFloderMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="297">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <marker date="1497793364518" expanded="true" signature="864:891" ph="SELECT f.* F... t_folder" />
+            <marker date="1497793364518" expanded="true" signature="989:1037" ph="SELECT f.* F... t_folder" />
+            <marker date="1497793364518" expanded="true" signature="989:1066" ph="SELECT f.* F... t_folder" />
+            <marker date="1497793364518" expanded="true" signature="1158:1206" ph="SELECT f.* F... t_folder" />
+            <marker date="1497793364518" expanded="true" signature="1158:1235" ph="SELECT f.* F... t_folder" />
+            <marker date="1497793364518" expanded="true" signature="1329:1379" ph="SELECT f.* F... t_folder" />
+            <marker date="1497793364518" expanded="true" signature="1329:1408" ph="SELECT f.* F... t_folder" />
+            <marker date="1497793364518" expanded="true" signature="1515:1817" ph="INSERT INTO t_folder... " />
+            <marker date="1497793364518" expanded="true" signature="1927:2672" ph="UPDATE t_fol... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/service/impl/AdvFolderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/dao/TermianlDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/TerminalMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="89" column="13" lean-forward="true" selection-start-line="80" selection-start-column="4" selection-end-line="89" selection-end-column="13" />
+          <folding>
+            <marker date="1497795074063" expanded="true" signature="3857:3964" ph="SELECT u.*,t... t_terminal" />
+            <marker date="1497795074063" expanded="true" signature="4088:4162" ph="SELECT * FRO... t_terminal" />
+            <marker date="1497795074063" expanded="true" signature="4284:4354" ph="SELECT * FRO... t_terminal" />
+            <marker date="1497795074063" expanded="true" signature="4452:4627" ph="SELECT t.*,r... t_terminal" />
+            <marker date="1497795074063" expanded="true" signature="4731:4783" ph="SELECT * FRO... t_terminal" />
+            <marker date="1497795074063" expanded="true" signature="5439:5468" ph="SELECT t.* F... t_terminal" />
+            <marker date="1497795074063" expanded="true" signature="5573:6202" ph="INSERT INTO t_terminal... " />
+            <marker date="1497795074063" expanded="true" signature="6310:7940" ph="UPDATE t_ter... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/model/Terminal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1894">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/service/TerminalService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="25" column="79" lean-forward="true" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/service/ResourceService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="34" column="41" lean-forward="false" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/service/impl/ResourceServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="65" column="66" lean-forward="true" selection-start-line="65" selection-start-column="66" selection-end-line="65" selection-end-column="66" />
+          <folding>
+            <element signature="e#2003#2004#0" expanded="true" />
+            <element signature="e#2076#2077#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/Menu/resource.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="95" column="59" lean-forward="false" selection-start-line="95" selection-start-column="53" selection-end-line="95" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/public.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/controller/IndexController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="45" column="29" lean-forward="false" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
-          <folding>
-            <element signature="e#1509#1510#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/Menu/terminal.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1537">
-          <caret line="187" column="0" lean-forward="true" selection-start-line="187" selection-start-column="0" selection-end-line="187" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/adv_Resource.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-741">
-          <caret line="64" column="146" lean-forward="false" selection-start-line="64" selection-start-column="146" selection-end-line="64" selection-end-column="146" />
-          <folding>
-            <marker date="1497272600174" expanded="true" signature="1779:1789" ph="..." />
-            <marker date="1497272600174" expanded="true" signature="1848:1858" ph="..." />
-            <marker date="1497272600174" expanded="true" signature="2417:2441" ph="..." />
-            <marker date="1497272600174" expanded="true" signature="2870:2882" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/ztree/jquery.popupSmallMenu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/Menu/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="119" column="86" lean-forward="true" selection-start-line="119" selection-start-column="86" selection-end-line="119" selection-end-column="86" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/adv_Folder.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="37" column="44" lean-forward="true" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/Menu/resource.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="92" column="63" lean-forward="true" selection-start-line="92" selection-start-column="63" selection-end-line="92" selection-end-column="63" />
-          <folding>
-            <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="26" column="20" lean-forward="true" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
-          <folding>
-            <element signature="e#931#932#0" expanded="true" />
-            <element signature="e#964#965#0" expanded="true" />
-            <element signature="e#1025#1026#0" expanded="true" />
-            <element signature="e#1069#1070#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/model/AdvFolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="783">
-          <caret line="67" column="0" lean-forward="true" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+        <state relative-caret-position="143">
+          <caret line="42" column="56" lean-forward="false" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="56" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/UserMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="891">
-          <caret line="57" column="59" lean-forward="true" selection-start-line="57" selection-start-column="59" selection-end-line="57" selection-end-column="59" />
+        <state relative-caret-position="189">
+          <caret line="52" column="49" lean-forward="true" selection-start-line="52" selection-start-column="49" selection-end-line="52" selection-end-column="49" />
           <folding>
-            <marker date="1497276195462" expanded="true" signature="3701:3846" ph="SELECT u.*,t... t_user" />
-            <marker date="1497276195462" expanded="true" signature="3962:4025" ph="SELECT u.*FR... t_user" />
-            <marker date="1497276195462" expanded="true" signature="4116:4218" ph="SELECT u.*FR... t_user" />
-            <marker date="1497276195462" expanded="true" signature="4300:4324" ph="SELECT u.* F... t_user" />
-            <marker date="1497276195462" expanded="true" signature="4421:5082" ph="INSERT INTO t_user... " />
-            <marker date="1497276195462" expanded="true" signature="5181:6836" ph="UPDATE t_use... " />
+            <marker date="1497800090044" expanded="true" signature="3929:4074" ph="SELECT u.*,t... t_user" />
+            <marker date="1497800090044" expanded="true" signature="4190:4253" ph="SELECT u.*FR... t_user" />
+            <marker date="1497800090044" expanded="true" signature="4344:4446" ph="SELECT u.*FR... t_user" />
+            <marker date="1497800090044" expanded="true" signature="4528:4552" ph="SELECT u.* F... t_user" />
+            <marker date="1497800090044" expanded="true" signature="4649:5469" ph="INSERT INTO t_user... " />
+            <marker date="1497800090044" expanded="true" signature="5568:7589" ph="UPDATE t_use... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/dao/ResourceDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="32" column="30" lean-forward="false" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/ResourceMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1377">
+          <caret line="15" column="63" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="63" />
+          <folding>
+            <marker date="1497800090087" expanded="true" signature="4003:4110" ph="SELECT u.*,r... t_resource" />
+            <marker date="1497800090087" expanded="true" signature="4234:4302" ph="SELECT * FRO... t_resource" />
+            <marker date="1497800090087" expanded="true" signature="4399:4574" ph="SELECT t.*,r... t_resource" />
+            <marker date="1497800090087" expanded="true" signature="4399:4603" ph="SELECT t.*,r... t_resource" />
+            <marker date="1497800090087" expanded="true" signature="4700:4749" ph="SELECT t.* F... t_resource" />
+            <marker date="1497800090087" expanded="true" signature="4700:4778" ph="SELECT t.* F... t_resource" />
+            <marker date="1497800090087" expanded="true" signature="5154:5252" ph="SELECT COUNT... t_resource" />
+            <marker date="1497800090087" expanded="true" signature="5330:5456" ph="SELECT r.* F... *" />
+            <marker date="1497800090087" expanded="true" signature="5347:5399" ph="SELECT * FRO... t_resource" />
+            <marker date="1497800090087" expanded="true" signature="5544:5674" ph="SELECT r.* F... *" />
+            <marker date="1497800090087" expanded="true" signature="5561:5613" ph="SELECT * FRO... t_resource" />
+            <marker date="1497800090087" expanded="true" signature="5762:5791" ph="SELECT t.* F... t_resource" />
+            <marker date="1497800090087" expanded="true" signature="5896:6324" ph="INSERT INTO t_resource... " />
+            <marker date="1497800090087" expanded="true" signature="6432:7539" ph="UPDATE t_res... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/adv_Resource.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="734">
+          <caret line="65" column="119" lean-forward="false" selection-start-line="65" selection-start-column="110" selection-end-line="65" selection-end-column="119" />
+          <folding>
+            <marker date="1497792904531" expanded="true" signature="1789:1799" ph="..." />
+            <marker date="1497792904531" expanded="true" signature="1858:1868" ph="..." />
+            <marker date="1497792904531" expanded="true" signature="2427:2451" ph="..." />
+            <marker date="1497792904531" expanded="true" signature="2880:2892" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/utils/ConvertUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="37" column="18" lean-forward="false" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2025">
-          <caret line="45" column="25" lean-forward="false" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="25" />
+        <state relative-caret-position="119">
+          <caret line="102" column="0" lean-forward="false" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/controller/ResourceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yoyo/gamecenter/controller/AdvFolderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

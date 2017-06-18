@@ -8,5 +8,6 @@ CREATE TABLE t_resource(
   `isDelete` TINYINT(4) DEFAULT 0 COMMENT '是否删除 0-未删除，1-删除',
   `souceType` INT DEFAULT 0 COMMENT '文件类型，0-图片，1-视频',
   `uId` BIGINT(11) DEFAULT NULL COMMENT '外键，绑定用户id',
+  `fId` BIGINT(11) DEFAULT NULL COMMENT '外键，绑定文件夹id',
   PRIMARY KEY  (`rId`)
 );

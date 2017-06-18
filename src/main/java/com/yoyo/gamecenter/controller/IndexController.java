@@ -1,10 +1,15 @@
 package com.yoyo.gamecenter.controller;
 
 import com.yoyo.gamecenter.model.User;
+import com.yoyo.gamecenter.service.ResourceService;
+import com.yoyo.gamecenter.service.TerminalService;
+import com.yoyo.gamecenter.service.impl.ResourceServiceImpl;
+import com.yoyo.gamecenter.service.impl.TerminalServiceImpl;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
@@ -13,6 +18,12 @@ import javax.servlet.http.HttpSession;
  */
 @Controller
 public class IndexController {
+
+    @Resource
+    ResourceService resourceService;
+
+    @Resource
+    TerminalService terminalService;
 
     @RequestMapping("/index")
     public String index(HttpServletRequest request, Model model) {
@@ -30,9 +41,8 @@ public class IndexController {
     @RequestMapping("/home")
     public String home(Model model, HttpSession session) {
         User user = (User) session.getAttribute("user");
-
-        model.addAttribute("programNum", user.getResources() == null ? 0 : user.getResources().size());
-        model.addAttribute("terminalNum", user.getTerminals() == null ? 0 : user.getTerminals().size());
+        model.addAttribute("programNum", resourceService.getResourceCount(user.getId(),null));
+        model.addAttribute("terminalNum", terminalService.getTerminalCount(user.getId(),null));
 
         return "/Menu/home";
     }

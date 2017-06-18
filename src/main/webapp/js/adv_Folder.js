@@ -25,7 +25,7 @@ $(document).ready(function () {
 });
 function LoadZtree() {
     $.ajax({
-        url: "/Folder/GetFolderList/?t=" + Math.random(),
+        url: getRootPath()+"/folder/folderList/",
         type: 'POST',
         dataType: 'json',
         timeout: 30000,
@@ -55,7 +55,7 @@ function beforeRename(treeId, treeNode, newName, isCancel) {
         else {
             Id = treeNode.id;//编辑时取主键Id
         }
-        $.post("/Folder/Edit/?Id=" + Id + "&name=" + newName + "&type=" + $("#Id").val(), function (obj) {
+        $.post(getRootPath()+"/folder/edit/?Id=" + Id + "&name=" + newName + "&type=" + $("#Id").val(), function (obj) {
             if (!obj.IsOk) {
                 alert("编辑失败！");
             }
@@ -93,7 +93,7 @@ function CreateZtree() {
 };
 function DelZtree(Id) {
     if (confirm('确定要删除文件夹和该目录下素材?')) {
-        $.post("/Folder/Del/?Id=" + Id, function (obj) {
+        $.post(getRootPath()+"/folder/delete/?Id=" + Id, function (obj) {
             if (!obj.IsOk) {
                 alert("删除失败！");
             }
@@ -105,7 +105,7 @@ function DelZtree(Id) {
 function OnRightClick(event, treeId, treeNode) {
     ztree.selectNode(treeNode);
     $("#fid").val(treeNode.id);
-    LoadPage();
+    //LoadPage();
     if (treeNode) {
         $("#menu").popupSmallMenu({
             event: event,

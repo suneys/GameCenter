@@ -16,7 +16,10 @@ public class Resource {
     private Short isDelete;             // 是否删除 0-未删除，1-删除
     private int souceType;              // 文件类型，0-图片，1-视频
     private long uId;                   // 外键，绑定用户id
+    private long fId;                   // 外键，绑定的文件夹Id
     private List<Terminal> terminals;
+
+
 
     public List<Terminal> getTerminals() {
         return terminals;
@@ -98,6 +101,13 @@ public class Resource {
         this.uId = uId;
     }
 
+    public long getfId() {
+        return fId;
+    }
+
+    public void setfId(long fId) {
+        this.fId = fId;
+    }
 
     @Override
     public String toString() {

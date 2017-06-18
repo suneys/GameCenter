@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yoyo.gamecenter.dao.AdvFolderDao">
+
+    <resultMap id="AdvFloderBaseMap" type="com.yoyo.gamecenter.model.AdvFolder">
+        <id column="fId" property="fId" jdbcType="BIGINT"/>
+        <result column="pId" property="pId" jdbcType="BIGINT"/>
+        <result column="name" property="name" jdbcType="NVARCHAR"/>
+        <result column="uId" property="uId" jdbcType="BIGINT"/>
+        <result column="createDate" property="createDate" jdbcType="DATE"/>
+        <result column="updateDate" property="updateDate" jdbcType="DATE"/>
+        <result column="isDelete" property="isDelete" jdbcType="SMALLINT"/>
+    </resultMap>
+
+    <select id="selectAllAdvFolder" resultMap="AdvFloderBaseMap">
+        SELECT f.*  FROM t_folder f
+    </select>
+
+    <select id="selectAllAdvFolderByUserId" resultMap="AdvFloderBaseMap">
+        SELECT f.*  FROM t_folder f WHERE f.uId = #{uId} AND f.isDelete = #{isDelete}
+    </select>
+
+    <select id="selectAdvFolderById" resultMap="AdvFloderBaseMap" >
+        SELECT f.*  FROM t_folder f WHERE f.fId = #{fId} AND f.isDelete = #{isDelete}
+    </select>
+
+    <select id="selectAdvFolderByName" resultMap="AdvFloderBaseMap" >
+        SELECT f.*  FROM t_folder f WHERE f.name = #{name} AND f.isDelete = #{isDelete}
+    </select>
+
+    <insert id="addAdvFolder" parameterType="com.yoyo.gamecenter.model.AdvFolder">
+        INSERT INTO t_folder
+        (
+        pId,name,uId,createDate,updateDate,isDelete
+        )
+        VALUES
+        (
+        #{pId,jdbcType=BIGINT},#{name,jdbcType=NVARCHAR},#{uId,jdbcType=BIGINT},#{createDate,jdbcType=DATE},
+        #{updateDate,jdbcType=DATE},#{isDelete,jdbcType=SMALLINT}
+        )
+    </insert>
+
+    <update id="updateAdvFolder" parameterType="com.yoyo.gamecenter.model.AdvFolder">
+        UPDATE t_folder
+        <set>
+            <if test="pId != null">
+                pId = #{pId,jdbcType=BIGINT},
+            </if>
+            <if test="name != null">
+                name = #{name,jdbcType=NVARCHAR},
+            </if>
+            <if test="uId != null">
+                uId = #{uId,jdbcType=BIGINT},
+            </if>
+            <if test="createDate != null">
+                createDate = #{createDate,jdbcType=DATE},
+            </if>
+            <if test="updateDate != null">
+                updateDate = #{updateDate,jdbcType=DATE},
+            </if>
+            <if test="isDelete != null">
+                isDelete = #{isDelete,jdbcType=SMALLINT},
+            </if>
+        </set>
+        where fId=#{fId,jdbcType=BIGINT}
+    </update>
+</mapper>

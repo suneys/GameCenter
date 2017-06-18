@@ -13,8 +13,9 @@
         <result column="souceType" property="souceType" jdbcType="INTEGER"/>
         <result column="activationDate" property="activationDate" jdbcType="DATE"/>
         <result column="uId" property="uId" jdbcType="BIGINT"/>
+        <result column="fId" property="fId" jdbcType="BIGINT"/>
     </resultMap>
-    
+
     <resultMap id="ResourceUserMap" type="com.yoyo.gamecenter.model.Resource" extends="ResourceBaseMap">
         <!-- 一对一的关系 -->
         <!-- property: 指的是属性的值, javaType：指的是元素的类型 -->
@@ -65,12 +66,36 @@
         WHERE  t.fileName = #{resourceName}
     </select>
 
-    <select id="selectAllResourceByUserId" parameterType="java.lang.Long" resultMap="ResourceTerminal">
+    <select id="selectAllResourceByUserId" resultMap="ResourceTerminal">
         SELECT t.*,r.* FROM t_resource r LEFT JOIN resource_terminal rt
         ON r.rId = rt.rId
         LEFT JOIN t_terminal t
         ON t.rId = rt.tId
-        WHERE r.uId = #{uId}
+        WHERE r.uId = #{uId} AND r.isDelete = #{isDelete}
+    </select>
+
+    <select id="selectAllResourceByFileId" resultMap="ResourceTerminal">
+        SELECT t.* FROM t_resource r WHERE r.fId = #{fId} AND r.isDelete = #{isDelete}
+    </select>
+    <select id="getResourceCount" resultType="java.lang.Integer">
+        SELECT COUNT(*) AS count_value FROM t_resource r WHERE r.uId = #{uId} AND r.isDelete = #{isDelete}
+        <if test="text != null">
+            AND r.fileName LIKE "%"#{text}"%"
+        </if>
+    </select>
+
+    <select id="getResourceCountInFile" resultType="java.lang.Integer">
+        SELECT COUNT(*) AS count_value FROM t_resource r WHERE r.fId = #{fId} AND r.isDelete = #{isDelete}
+    </select>
+
+    <select id="queryByPage" resultMap="ResourceUserMap">
+    SELECT r.* FROM (SELECT * FROM t_resource limit #{pageNo},#{pageSize}) r
+    WHERE r.uId = #{uId} AND r.isDelete = #{isDelete}
+    </select>
+
+    <select id="queryByPageInFile" resultMap="ResourceUserMap">
+        SELECT r.* FROM (SELECT * FROM t_resource limit #{pageNo},#{pageSize}) r
+        WHERE r.fId = #{fId} AND r.isDelete = #{isDelete}
     </select>
 
     <select id="selectAllResource" resultMap="ResourceBaseMap">
@@ -80,12 +105,12 @@
     <insert id="addResource" parameterType="com.yoyo.gamecenter.model.Resource">
         INSERT INTO t_resource
         (
-        fileName,fileSize,path,thumbPath,createTime,isDelete,souceType,uId
+        fileName,fileSize,path,thumbPath,createTime,isDelete,souceType,uId,fId
         )
         VALUES
         (
         #{fileName,jdbcType=NVARCHAR},#{fileSize,jdbcType=INTEGER},#{path,jdbcType=NVARCHAR},#{thumbPath,jdbcType=NVARCHAR},
-        #{createTime,jdbcType=TIMESTAMP},#{isDelete,jdbcType=SMALLINT},#{souceType,jdbcType=INTEGER},#{uId,jdbcType=BIGINT}
+        #{createTime,jdbcType=TIMESTAMP},#{isDelete,jdbcType=SMALLINT},#{souceType,jdbcType=INTEGER},#{uId,jdbcType=BIGINT},#{fId,jdbcType=BIGINT}
         )
     </insert>
 
@@ -115,6 +140,9 @@
             </if>
             <if test="uId != null">
                 uId = #{uId,jdbcType=BIGINT},
+            </if>
+            <if test="fId != null">
+                fId = #{fId,jdbcType=BIGINT},
             </if>
         </set>
         where rId=#{rId,jdbcType=BIGINT}
