@@ -3,6 +3,7 @@ package com.yoyo.gamecenter.controller;
 import com.yoyo.gamecenter.model.AdvFolder;
 import com.yoyo.gamecenter.model.User;
 import com.yoyo.gamecenter.service.AdvFolderService;
+import com.yoyo.gamecenter.service.ResourceService;
 import com.yoyo.gamecenter.utils.ResponseUtil;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,6 +22,9 @@ public class AdvFolderController {
 
     @Resource
     AdvFolderService advFolderService;
+
+    @Resource
+    ResourceService resourceService;
 
     @RequestMapping("/folderList")
     public void folderList(HttpServletRequest request, HttpServletResponse response){
@@ -69,7 +73,9 @@ public class AdvFolderController {
                 advFolder.setpId(id);
                 advFolder.setCreateDate(new Date());
                 advFolder.setName(name);
+                advFolder.setIsDelete((short) 0);
                 advFolderService.addAdvFolder(advFolder);
+                jsonMap.put("IsOk",true);
             }else{
                 //重命名
                 AdvFolder advFolder = advFolderService.getAdvFolderById((long) id);
@@ -93,6 +99,12 @@ public class AdvFolderController {
             AdvFolder advFolder = advFolderService.getAdvFolderById((long) id);
             advFolder.setIsDelete((short) 1);
             advFolderService.updateAdvFolder(advFolder);
+            List<com.yoyo.gamecenter.model.Resource> resources = resourceService.getAllResourceByFileId(id);
+            for (com.yoyo.gamecenter.model.Resource resource :
+                    resources) {
+                resource.setIsDelete((short) 1);
+                resourceService.updateResource(resource);
+            }
             jsonMap.put("IsOk",true);
         } catch (Exception e) {
             e.printStackTrace();

@@ -10,7 +10,7 @@ CREATE TABLE t_terminal(
   `activationDate` DATE DEFAULT NULL COMMENT '绑定日期',
   `endDate` DATE DEFAULT NULL COMMENT '截止日期(未注册默认7天有效，预留功能)',
   `agentId` BIGINT(11) DEFAULT NULL COMMENT '代理商ID',
-  `isDelete` TINYINT(4) DEFAULT 0 COMMENT '是否删除 0-未删除，1-删除',
+  `t_isDelete` TINYINT(4) DEFAULT 0 COMMENT '是否删除 0-未删除，1-删除',
   `isOverdue` TINYINT(4) DEFAULT 0 COMMENT '是否过期 0-未过期，1-过期',
   `version` NVARCHAR(50) DEFAULT NULL COMMENT '版本号',
   PRIMARY KEY  (`tId`)

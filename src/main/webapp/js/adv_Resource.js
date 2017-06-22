@@ -127,7 +127,7 @@ function UploadFile(Id) {
             resetFileInput($(BtnFile));
             return false;
         };
-        $("#form2").attr("action", "/resource/upload/?Id=" + $("#fid").val() + "&t=" + Math.random());
+        $("#form2").attr("action", getRootPath()+"/resource/upload/?Id=" + $("#fid").val() + "&t=" + Math.random());
         $("#s_submit").click();
     };
 };
@@ -182,8 +182,8 @@ function resetFileInput(file) {
     finish = 0;
 }
 function IcoSouceType(SouceType) {
-    if (SouceType == 1) return " <i class=\"glyphicon glyphicon-picture\"></i>";
-    else if (SouceType == 2) return " <i class=\"glyphicon glyphicon-facetime-video\"></i>";
+    if (SouceType == 0) return " <i class=\"glyphicon glyphicon-picture\"></i>";
+    else if (SouceType == 1) return " <i class=\"glyphicon glyphicon-facetime-video\"></i>";
     else return " <i class=\"fa fa-music\"></i>";
 }
 
@@ -205,7 +205,7 @@ function DelResource(state) {
             parent.ShowWarning(106, 10010, "Resource", 1)
         }
         else {
-            $.post("/Resource/Del/?resIds=" + Ids, function (obj) {
+            $.post(getRootPath()+"/resource/delete/?resIds=" + Ids, function (obj) {
                 if (obj.IsOk) {
                     parent.ShowOK(120, 10027);
                     LoadPage();

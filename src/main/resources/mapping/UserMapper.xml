@@ -36,7 +36,7 @@
             <result column="activationDate" property="activationDate"/>
             <result column="endDate" property="endDate"/>
             <result column="agentId" property="agentId"/>
-            <result column="isDelete" property="isDelete"/>
+            <result column="t_isDelete" property="isDelete"/>
             <result column="isOverdue" property="isOverdue"/>
             <result column="version" property="version"/>
         </collection>
@@ -48,7 +48,7 @@
             <result column="path" property="path"/>
             <result column="thumbPath" property="thumbPath"/>
             <result column="createTime" property="createTime"/>
-            <result column="isDelete" property="isDelete"/>
+            <result column="r_isDelete" property="isDelete"/>
             <result column="souceType" property="souceType"/>
             <result column="fId" property="fId"/>
         </collection>
@@ -59,7 +59,7 @@
             <result column="name" property="name"/>
             <result column="createDate" property="createDate"/>
             <result column="updateDate" property="updateDate"/>
-            <result column="isDelete" property="isDelete"/>
+            <result column="f_isDelete" property="isDelete"/>
         </collection>
 
     </resultMap>

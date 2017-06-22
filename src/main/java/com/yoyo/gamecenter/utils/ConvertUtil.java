@@ -4,6 +4,12 @@ package com.yoyo.gamecenter.utils;
  * Created by Administrator on 2017/6/18 0018.
  */
 
+import com.yoyo.gamecenter.contant.Content;
+import com.yoyo.gamecenter.contant.DataType;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 /**
  * 所有的转换工具类
  */
@@ -36,5 +42,53 @@ public class ConvertUtil {
             }
         }
         return "";
+    }
+
+    /**
+     * 将扩展名转换成枚举类型
+     * @param strExtension
+     * @return
+     */
+    public static Content getFileExtension(String strExtension){
+        if(("jpg,png,gif,bmp,jpge").contains(strExtension)){
+            return Content.image;
+        }else if(("mp4,avi").contains(strExtension)){
+            return Content.video;
+        }else{
+            return Content.other;
+        }
+    }
+
+    /**
+     * 获取日期格式
+     * @param type
+     * @return
+     */
+    public static String getStrDate(DataType type){
+        String date = "";
+        switch (type){
+            case N:
+                date =new SimpleDateFormat("yyyy").format(new Date());
+                break;
+            case Y:
+                date =new SimpleDateFormat("yyyyMM").format(new Date());
+                break;
+            case R:
+                date =new SimpleDateFormat("yyyyMMdd").format(new Date());
+                break;
+            case S:
+                date =new SimpleDateFormat("yyyyMMddHH").format(new Date());
+                break;
+            case F:
+                date =new SimpleDateFormat("yyyyMMddHHmm").format(new Date());
+                break;
+            case M:
+                date =new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
+                break;
+            case H:
+                date =new SimpleDateFormat("yyyyMMddHHmmssfff").format(new Date());
+                break;
+        }
+        return date;
     }
 }

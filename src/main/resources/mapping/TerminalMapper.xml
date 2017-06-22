@@ -14,7 +14,7 @@
         <result column="activationDate" property="activationDate" jdbcType="DATE"/>
         <result column="endDate" property="endDate" jdbcType="DATE"/>
         <result column="agentId" property="agentId" jdbcType="BIGINT"/>
-        <result column="isDelete" property="isDelete" jdbcType="SMALLINT"/>
+        <result column="t_isDelete" property="isDelete" jdbcType="SMALLINT"/>
         <result column="isOverdue" property="isOverdue" jdbcType="SMALLINT"/>
         <result column="version" property="version" jdbcType="NVARCHAR"/>
 
@@ -49,7 +49,7 @@
             <result column="path"     property="path"     jdbcType="NVARCHAR"/>
             <result column="thumbPath" property="thumbPath" jdbcType="NVARCHAR"/>
             <result column="createTime" property="createTime" jdbcType="TIMESTAMP"/>
-            <result column="isDelete" property="isDelete" jdbcType="SMALLINT"/>
+            <result column="r_isDelete" property="isDelete" jdbcType="SMALLINT"/>
             <result column="souceType"     property="souceType"     jdbcType="INTEGER"/>
             <result column="uId" property="uId" jdbcType="BIGINT"/>
         </collection>
@@ -79,14 +79,15 @@
     </select>
 
     <select id="queryByPage" resultMap="TerminalResource">
-        SELECT t.*,r.* FROM (SELECT * FROM t_terminal limit #{pageNo},#{pageSize}) t LEFT JOIN resource_terminal rt
+        SELECT tr.* FROM (SELECT t.*,r.fId,r.fileName,r.fileSize,r.path,r.thumbPath,r.createTime,r.r_isDelete,r.souceType,r.uId ruId,r.fId rfid FROM t_terminal t LEFT JOIN resource_terminal rt
         ON t.tId = rt.tId
         LEFT JOIN t_resource r
         ON r.rId = rt.rId
         WHERE t.uId = #{uId}
         <if test="text != null">
             AND t.terminalNo LIKE "%"#{text}"%" OR t.terminalName LIKE"%"#{text}"%"
-        </if>
+        </if>) tr limit #{pageNo},#{pageSize}
+
     </select>
 
     <select id="getTerminalCount"  resultType="java.lang.Integer">
@@ -103,7 +104,7 @@
     <insert id="addTerminal" parameterType="com.yoyo.gamecenter.model.Terminal">
         INSERT INTO t_terminal
         (
-        terminalNo,terminalName,publishState,isUpdate,createDate,uId,activation,activationDate,endDate,agentId,isDelete,isOverdue,version
+        terminalNo,terminalName,publishState,isUpdate,createDate,uId,activation,activationDate,endDate,agentId,t_isDelete,isOverdue,version
         )
         VALUES
         (
@@ -147,7 +148,7 @@
                 agentId = #{agentId,jdbcType=BIGINT},
             </if>
             <if test="isDelete != null">
-                isDelete = #{isDelete,jdbcType=SMALLINT},
+                t_isDelete = #{isDelete,jdbcType=SMALLINT},
             </if>
             <if test="isOverdue != null">
                 isOverdue = #{isOverdue,jdbcType=SMALLINT},

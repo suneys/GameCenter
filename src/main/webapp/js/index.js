@@ -88,7 +88,7 @@ function ShowWarning(title, text, directive, strId, Text1, Text2) {
         if (isConfirm) {
             switch (directive) {
                 case "LoginOut": window.location.href = getRootPath()+"logout";break;
-                case "Resource": parent.frames["iframe_"].window.DelResource(strId); break;//删除资源
+                case "Resource": parent.frames["iframe9"].window.DelResource(strId); break;//删除资源
                 case "DelPro": parent.frames["iframe9"].window.DelPro(strId); break;
                 case "CopyPro": parent.frames["iframe9"].window.CopyPro(strId); break;
                 case "Tem": parent.frames["iframe_"].window.DelTemInfo(strId); break;//删除模板

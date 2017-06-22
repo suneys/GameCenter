@@ -9,33 +9,33 @@
         <result column="path" property="path" jdbcType="NVARCHAR"/>
         <result column="thumbPath" property="thumbPath" jdbcType="NVARCHAR"/>
         <result column="createTime" property="createTime" jdbcType="TIMESTAMP"/>
-        <result column="isDelete" property="isDelete" jdbcType="SMALLINT"/>
+        <result column="r_isDelete" property="isDelete" jdbcType="SMALLINT"/>
         <result column="souceType" property="souceType" jdbcType="INTEGER"/>
         <result column="activationDate" property="activationDate" jdbcType="DATE"/>
         <result column="uId" property="uId" jdbcType="BIGINT"/>
         <result column="fId" property="fId" jdbcType="BIGINT"/>
     </resultMap>
 
-    <resultMap id="ResourceUserMap" type="com.yoyo.gamecenter.model.Resource" extends="ResourceBaseMap">
-        <!-- 一对一的关系 -->
-        <!-- property: 指的是属性的值, javaType：指的是元素的类型 -->
-        <association property="user" javaType="com.yoyo.gamecenter.model.User">
-            <id column="uId" property="id" jdbcType="BIGINT"/>
-            <result column="user_name" property="userName" jdbcType="VARCHAR"/>
-            <result column="user_phone" property="userPhone" jdbcType="VARCHAR"/>
-            <result column="user_email" property="userEmail" jdbcType="VARCHAR"/>
-            <result column="user_pwd" property="userPwd" jdbcType="VARCHAR"/>
-            <result column="user_role" property="userRole" jdbcType="SMALLINT"/>
-            <result column="create_time" property="createTime" jdbcType="TIMESTAMP"/>
-            <result column="modify_time" property="modifyTime" jdbcType="TIMESTAMP"/>
-            <result column="is_enable" property="isEnable" jdbcType="SMALLINT"/>
-            <result column="is_delete" property="isDelete" jdbcType="SMALLINT"/>
-            <result column="user_DaySend" property="daySend" jdbcType="INTEGER"/>
-            <result column="user_TotalSend" property="totalSend" jdbcType="INTEGER"/>
-            <result column="user_outDate" property="userOutDate" jdbcType="BIGINT"/>
-            <result column="user_secretKey" property="userSecretKey" jdbcType="VARCHAR"/>
-        </association>
-    </resultMap>
+    <!--<resultMap id="ResourceUserMap" type="com.yoyo.gamecenter.model.Resource" extends="ResourceBaseMap">-->
+    <!--&lt;!&ndash; 一对一的关系 &ndash;&gt;-->
+    <!--&lt;!&ndash; property: 指的是属性的值, javaType：指的是元素的类型 &ndash;&gt;-->
+    <!--<association property="user" javaType="com.yoyo.gamecenter.model.User">-->
+    <!--<id column="uId" property="id" jdbcType="BIGINT"/>-->
+    <!--<result column="user_name" property="userName" jdbcType="VARCHAR"/>-->
+    <!--<result column="user_phone" property="userPhone" jdbcType="VARCHAR"/>-->
+    <!--<result column="user_email" property="userEmail" jdbcType="VARCHAR"/>-->
+    <!--<result column="user_pwd" property="userPwd" jdbcType="VARCHAR"/>-->
+    <!--<result column="user_role" property="userRole" jdbcType="SMALLINT"/>-->
+    <!--<result column="create_time" property="createTime" jdbcType="TIMESTAMP"/>-->
+    <!--<result column="modify_time" property="modifyTime" jdbcType="TIMESTAMP"/>-->
+    <!--<result column="is_enable" property="isEnable" jdbcType="SMALLINT"/>-->
+    <!--<result column="is_delete" property="isDelete" jdbcType="SMALLINT"/>-->
+    <!--<result column="user_DaySend" property="daySend" jdbcType="INTEGER"/>-->
+    <!--<result column="user_TotalSend" property="totalSend" jdbcType="INTEGER"/>-->
+    <!--<result column="user_outDate" property="userOutDate" jdbcType="BIGINT"/>-->
+    <!--<result column="user_secretKey" property="userSecretKey" jdbcType="VARCHAR"/>-->
+    <!--</association>-->
+    <!--</resultMap>-->
 
     <resultMap id="ResourceTerminal" type="com.yoyo.gamecenter.model.Resource" extends="ResourceBaseMap">
         <collection property="terminals" ofType="com.yoyo.gamecenter.model.Terminal">
@@ -50,15 +50,15 @@
             <result column="activationDate" property="activationDate" jdbcType="DATE"/>
             <result column="endDate" property="endDate" jdbcType="DATE"/>
             <result column="agentId" property="agentId" jdbcType="BIGINT"/>
-            <result column="isDelete" property="isDelete" jdbcType="SMALLINT"/>
+            <result column="t_isDelete" property="isDelete" jdbcType="SMALLINT"/>
             <result column="isOverdue" property="isOverdue" jdbcType="SMALLINT"/>
             <result column="version" property="version" jdbcType="NVARCHAR"/>
         </collection>
     </resultMap>
 
-    <select id="selectResourceById" parameterType="java.lang.Long" resultMap="ResourceUserMap">
-        SELECT u.*,r.* FROM  t_resource r RIGHT JOIN t_user u ON u.uId = r.uId
-        WHERE  t.rId = #{resourceId}
+    <select id="selectResourceById" parameterType="java.lang.Long" resultMap="ResourceBaseMap">
+        SELECT r.* FROM  t_resource r
+        WHERE  r.rId = #{resourceId}
     </select>
 
     <select id="selectResourceByName" parameterType="java.lang.String" resultMap="ResourceBaseMap">
@@ -71,31 +71,32 @@
         ON r.rId = rt.rId
         LEFT JOIN t_terminal t
         ON t.rId = rt.tId
-        WHERE r.uId = #{uId} AND r.isDelete = #{isDelete}
+        WHERE r.uId = #{uId} AND r.r_isDelete = #{isDelete}
     </select>
 
-    <select id="selectAllResourceByFileId" resultMap="ResourceTerminal">
-        SELECT t.* FROM t_resource r WHERE r.fId = #{fId} AND r.isDelete = #{isDelete}
+    <select id="selectAllResourceByFileId" resultMap="ResourceBaseMap">
+        SELECT r.* FROM t_resource r WHERE r.fId = #{fId} AND r.r_isDelete = #{isDelete}
     </select>
     <select id="getResourceCount" resultType="java.lang.Integer">
-        SELECT COUNT(*) AS count_value FROM t_resource r WHERE r.uId = #{uId} AND r.isDelete = #{isDelete}
+        SELECT COUNT(*) AS count_value FROM t_resource r WHERE r.uId = #{uId} AND r.r_isDelete = #{isDelete}
         <if test="text != null">
             AND r.fileName LIKE "%"#{text}"%"
         </if>
     </select>
 
     <select id="getResourceCountInFile" resultType="java.lang.Integer">
-        SELECT COUNT(*) AS count_value FROM t_resource r WHERE r.fId = #{fId} AND r.isDelete = #{isDelete}
+        SELECT COUNT(*) AS count_value FROM t_resource r WHERE r.fId = #{fId} AND r.r_isDelete = #{isDelete}
     </select>
 
-    <select id="queryByPage" resultMap="ResourceUserMap">
-    SELECT r.* FROM (SELECT * FROM t_resource limit #{pageNo},#{pageSize}) r
-    WHERE r.uId = #{uId} AND r.isDelete = #{isDelete}
+    <select id="queryByPage" resultMap="ResourceBaseMap">
+    SELECT rr.* FROM (SELECT r.* FROM t_resource r WHERE r.uId = #{uId} AND r.r_isDelete = #{isDelete}) rr
+    limit #{pageNo},#{pageSize}
+
     </select>
 
-    <select id="queryByPageInFile" resultMap="ResourceUserMap">
-        SELECT r.* FROM (SELECT * FROM t_resource limit #{pageNo},#{pageSize}) r
-        WHERE r.fId = #{fId} AND r.isDelete = #{isDelete}
+    <select id="queryByPageInFile" resultMap="ResourceBaseMap">
+    SELECT rr.* FROM (SELECT r.* FROM t_resource r WHERE r.fId = #{fId} AND r.r_isDelete = #{isDelete}) rr
+    limit #{pageNo},#{pageSize}
     </select>
 
     <select id="selectAllResource" resultMap="ResourceBaseMap">
@@ -105,7 +106,7 @@
     <insert id="addResource" parameterType="com.yoyo.gamecenter.model.Resource">
         INSERT INTO t_resource
         (
-        fileName,fileSize,path,thumbPath,createTime,isDelete,souceType,uId,fId
+        fileName,fileSize,path,thumbPath,createTime,r_isDelete,souceType,uId,fId
         )
         VALUES
         (
@@ -118,7 +119,7 @@
         UPDATE t_resource
         <set>
             <if test="fileName != null">
-                fileName = #{terminalNo,jdbcType=NVARCHAR},
+                fileName = #{fileName,jdbcType=NVARCHAR},
             </if>
             <if test="fileSize != null">
                 fileSize = #{fileSize,jdbcType=INTEGER},
@@ -133,7 +134,7 @@
                 createTime = #{createTime,jdbcType=TIMESTAMP},
             </if>
             <if test="isDelete != null">
-                isDelete = #{isDelete,jdbcType=SMALLINT},
+                r_isDelete = #{isDelete,jdbcType=SMALLINT},
             </if>
             <if test="souceType != null">
                 souceType = #{souceType,jdbcType=INTEGER},
