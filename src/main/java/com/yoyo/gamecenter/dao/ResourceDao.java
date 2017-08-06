@@ -2,12 +2,14 @@ package com.yoyo.gamecenter.dao;
 
 import com.yoyo.gamecenter.model.Resource;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 /**
  * Created by Administrator on 2017/5/20 0020.
  */
+@Repository
 public interface ResourceDao {
 
     Resource selectResourceById(@Param("resourceId") Long resourceId);
@@ -24,7 +26,7 @@ public interface ResourceDao {
 
     List<Resource> selectAllResourceByFileId(@Param("fId") long fId,@Param("isDelete") short isDelete);
 
-    int selectTerminals(@Param("resourceId") Long resourceId, @Param("terminalIds") List<Long> terminalIds);
+    int selectTerminals(@Param("resourceId") Long resourceId, @Param("terminalNos") List<String> terminalNos);
 
     int getResourceCount(@Param("uId") long uId,@Param("text") String text,@Param("isDelete") short isDelete);
 

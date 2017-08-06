@@ -19,7 +19,7 @@ public class ImageUtil {
      * @param thumbPath  缩略图的保存路径
      * @param suffix 缩略图的后缀名
      */
-    public static void thumbnailImage(File imgFile,int width,int heigth,String thumbPath,String suffix){
+    public static boolean thumbnailImage(File imgFile,int width,int heigth,String thumbPath,String suffix){
         try {
             Image img = ImageIO.read(imgFile);
             BufferedImage bi = new BufferedImage(width, heigth, BufferedImage.TYPE_INT_RGB);
@@ -27,8 +27,10 @@ public class ImageUtil {
             g.drawImage(img, 0, 0, width, heigth, Color.LIGHT_GRAY, null);
             g.dispose();
             ImageIO.write(bi,suffix,new File(thumbPath));
+            return true;
         } catch (Exception e) {
             e.printStackTrace();
         }
+        return false;
     }
 }

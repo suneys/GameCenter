@@ -44,6 +44,25 @@ public class ConvertUtil {
         return "";
     }
 
+    public static String[][] PublishStateDict = new String[][]
+    {
+        {"尚未发布","0"},
+        {"发布成功","1"},
+        {"检查网络","2"},
+    };
+
+    public static String getPublishStateName(int Id)
+    {
+        for (int i = 0; i < PublishStateDict.length; i++)
+        {
+            if (Id == Integer.parseInt(PublishStateDict[i][1]))
+            {
+                return PublishStateDict[i][0];
+            }
+        }
+        return "";
+    }
+
     /**
      * 将扩展名转换成枚举类型
      * @param strExtension

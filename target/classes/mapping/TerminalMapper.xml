@@ -8,7 +8,7 @@
         <result column="terminalName" property="terminalName" jdbcType="NVARCHAR"/>
         <result column="publishState" property="publishState" jdbcType="SMALLINT"/>
         <result column="isUpdate" property="isUpdate" jdbcType="SMALLINT"/>
-        <result column="createDate" property="createDate" jdbcType="DATE"/>
+        <result column="createDate" property="createDate" jdbcType="TIMESTAMP"/>
         <result column="uId" property="uId" jdbcType="BIGINT"/>
         <result column="activation" property="activation" jdbcType="SMALLINT"/>
         <result column="activationDate" property="activationDate" jdbcType="DATE"/>
@@ -55,6 +55,19 @@
         </collection>
     </resultMap>
 
+    <resultMap id="TerminalGame" type="com.yoyo.gamecenter.model.Terminal" extends="TerminalBaseMap">
+        <collection property="games" ofType="com.yoyo.gamecenter.model.Game" >
+            <id column="gId" property="gId" jdbcType="BIGINT"/>
+            <result column="gameName" property="gameName" jdbcType="NVARCHAR"/>
+            <result column="path" property="path" jdbcType="NVARCHAR"/>
+            <result column="thumbPath" property="thumbPath" jdbcType="NVARCHAR"/>
+            <result column="g_isDelete" property="g_isDelete" jdbcType="SMALLINT"/>
+            <result column="packageName" property="packageName" jdbcType="NVARCHAR"/>
+            <result column="uId" property="uId" jdbcType="BIGINT"/>
+            <result column="gAttribute" property="gAttribute" jdbcType="SMALLINT"/>
+        </collection>
+    </resultMap>
+
     <select id="selectTerminalById" parameterType="java.lang.Long" resultMap="TerminalUserMap">
         SELECT u.*,t.* FROM  t_terminal t RIGHT JOIN t_user u ON u.uId = t.uId
         WHERE  t.tId = #{terminalId}
@@ -65,28 +78,45 @@
         WHERE  t.terminalName = #{terminalName}
     </select>
 
-    <select id="selectTerminalByNo" parameterType="java.lang.String" resultMap="TerminalBaseMap">
-        SELECT * FROM t_terminal t
-        WHERE  t.terminalNo = #{terminalNo}
+    <select id="selectTerminalByNo" parameterType="java.lang.String" resultMap="TerminalResource">
+        SELECT t.*,r.* FROM t_terminal t LEFT JOIN resource_terminal rt
+        ON t.terminalNo = rt.tNo
+        LEFT JOIN t_resource r
+        ON r.rId = rt.rId
+        WHERE t.terminalNo = #{terminalNo}
+    </select>
+
+    <select id="selectTerminalByNoWithGame" parameterType="java.lang.String" resultMap="TerminalGame">
+        SELECT t.*,g.* FROM t_terminal t LEFT JOIN game_terminal gt
+        ON t.terminalNo = gt.terminalNo
+        LEFT JOIN t_game g
+        ON g.gId = gt.gId
+        WHERE t.terminalNo = #{terminalNo}
     </select>
 
     <select id="selectAllTerminalByUserId"  resultMap="TerminalResource">
         SELECT t.*,r.* FROM t_terminal t LEFT JOIN resource_terminal rt
-        ON t.tId = rt.tId
+        ON t.terminalNo = rt.tNo
         LEFT JOIN t_resource r
         ON r.rId = rt.rId
         WHERE t.uId = #{uId}
     </select>
 
-    <select id="queryByPage" resultMap="TerminalResource">
-        SELECT tr.* FROM (SELECT t.*,r.fId,r.fileName,r.fileSize,r.path,r.thumbPath,r.createTime,r.r_isDelete,r.souceType,r.uId ruId,r.fId rfid FROM t_terminal t LEFT JOIN resource_terminal rt
-        ON t.tId = rt.tId
-        LEFT JOIN t_resource r
-        ON r.rId = rt.rId
+    <select id="queryByPage" resultMap="TerminalBaseMap">
+        <!--SELECT tr.* FROM (SELECT t.*,r.rId,r.fileName,r.fileSize,r.path,r.thumbPath,r.createTime,r.r_isDelete,r.souceType,r.uId ruId,r.fId rfid FROM t_terminal t LEFT JOIN resource_terminal rt-->
+        <!--ON t.terminalNo = rt.tNo-->
+        <!--LEFT JOIN t_resource r-->
+        <!--ON r.rId = rt.rId-->
+        <!--WHERE t.uId = #{uId}-->
+        <!--<if test="text != null">-->
+            <!--AND t.terminalNo LIKE "%"#{text}"%" OR t.terminalName LIKE"%"#{text}"%"-->
+        <!--</if> GROUP BY t.tId) tr limit #{pageNo},#{pageSize}-->
+        SELECT t.* FROM  t_terminal t
         WHERE t.uId = #{uId}
         <if test="text != null">
-            AND t.terminalNo LIKE "%"#{text}"%" OR t.terminalName LIKE"%"#{text}"%"
-        </if>) tr limit #{pageNo},#{pageSize}
+        AND t.terminalNo LIKE "%"#{text}"%" OR t.terminalName LIKE"%"#{text}"%"
+        </if>
+        limit #{pageNo},#{pageSize}
 
     </select>
 
@@ -109,7 +139,7 @@
         VALUES
         (
         #{terminalNo,jdbcType=NVARCHAR},#{terminalName,jdbcType=NVARCHAR},#{publishState,jdbcType=SMALLINT},#{isUpdate,jdbcType=SMALLINT},
-        #{createDate,jdbcType=DATE},#{uId,jdbcType=BIGINT},#{activation,jdbcType=SMALLINT},#{activationDate,jdbcType=DATE},
+        #{createDate,jdbcType=TIMESTAMP},#{uId,jdbcType=BIGINT},#{activation,jdbcType=SMALLINT},#{activationDate,jdbcType=DATE},
         #{endDate,jdbcType=DATE},#{agentId,jdbcType=BIGINT},#{isDelete,jdbcType=SMALLINT}, #{isOverdue,jdbcType=SMALLINT},#{version,jdbcType=NVARCHAR}
         )
     </insert>
@@ -130,7 +160,7 @@
                 isUpdate = #{isUpdate,jdbcType=SMALLINT},
             </if>
             <if test="createDate != null">
-                createDate = #{createDate,jdbcType=DATE},
+                createDate = #{createDate,jdbcType=TIMESTAMP},
             </if>
             <if test="uId != null">
                 uId = #{uId,jdbcType=BIGINT},
@@ -159,5 +189,37 @@
         </set>
         where tId=#{tId,jdbcType=BIGINT}
     </update>
+
+    <insert id="selectResources">
+
+        INSERT INTO resource_terminal
+        (tNo,rId)
+        VALUES
+        <foreach collection="resourceIds" item="id" separator=",">
+            (#{terminalNo}, #{id})
+        </foreach>
+
+    </insert>
+
+    <delete id="deleteResources">
+        DELETE FROM resource_terminal WHERE tNo=#{terminalNo,jdbcType=NVARCHAR}
+    </delete>
+
+    <insert id="selectGames">
+
+        INSERT INTO game_terminal
+        (terminalNo,gId)
+        VALUES
+        <foreach collection="gameIds" item="id" separator=",">
+            (#{terminalNo}, #{id})
+        </foreach>
+
+    </insert>
+
+    <delete id="deleteGames">
+        DELETE FROM game_terminal WHERE terminalNo=#{terminalNo,jdbcType=NVARCHAR}
+    </delete>
+
+
 
 </mapper>

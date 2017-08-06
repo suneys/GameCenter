@@ -2,12 +2,14 @@ package com.yoyo.gamecenter.dao;
 
 import com.yoyo.gamecenter.model.AdvFolder;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 /**
  * Created by Administrator on 2017/6/14 0014.
  */
+@Repository
 public interface AdvFolderDao {
     List<AdvFolder> selectAllAdvFolder();
 

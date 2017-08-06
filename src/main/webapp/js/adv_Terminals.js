@@ -90,11 +90,11 @@ function IcoPublishState(value, rows) {
 
     var Id = "id=\"s_" + rows.TerminalNo + "\"";
     if (rows.PublishState === 1)//成功
-        return '<span ' + Id + ' class="label label-primary"> 发布成功</span> ';
+        return '<span ' + Id + ' class="label label-primary"> ' + value + '</span> ';
     else if (rows.PublishState === 2)//响应
-        return '<span ' + Id + ' class="label label-warning">发布中</span>';
+        return '<span ' + Id + ' class="label label-warning">' + value + '</span>';
     else//未发布
-        return '<span ' + Id + ' class="label label-danger">未发布</span> ';
+        return '<span ' + Id + ' class="label label-danger">' + value + '</span> ';
 
 
 }
@@ -160,6 +160,7 @@ var BtnSend = "#BtnSend";
 
 var SendYun = function () {
     var Pid = $("#Ids").val();
+    var type = $("#type").val();
     if (!isBlank(Pid)) {
         parent.ShowError(140, 10038);
         return false;
@@ -171,7 +172,7 @@ var SendYun = function () {
     ;
     BtnDisabled(BtnSend, "", true);
     $.ajax({
-        url: "/Terminal/Send/?ProgrammeId=" + Pid + "&TerminalNo=" + chekId + "&t=" + Math.random(),
+        url: getRootPath()+"/terminal/send/?ProgrammeId=" + Pid + "&TerminalNo=" + chekId + "&type=" + type + "&t=" + Math.random(),
         type: 'POST',
         dataType: 'json',
         timeout: 300000,
@@ -205,7 +206,7 @@ function CheckIsSuccess(TerminalNo) {
     $("#s_" + TerminalNo).removeClass("label-primary").addClass("label-danger");
     $("#s_" + TerminalNo).text("处理中...");
     timeID = window.setInterval(function () {
-        $.post("/M/Terminals/Check/?TerminalNo=" + TerminalNo, function (obj) {
+        $.post(getRootPath()+"/terminal/check/?TerminalNo=" + TerminalNo, function (obj) {
             if (obj.IsOk) {
                 $("#s_" + TerminalNo).removeClass("label-danger").addClass("label-primary");
                 $("#s_" + TerminalNo).text("发布成功");

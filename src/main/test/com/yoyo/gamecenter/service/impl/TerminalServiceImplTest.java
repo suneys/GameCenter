@@ -43,6 +43,12 @@ public class TerminalServiceImplTest extends TestCase {
     }
 
     @Test
+    public void testGetTerminalByNo() throws Exception{
+        Terminal terminal = terminalService.getTerminalByNo("ff4f93fd6520");
+        System.out.println(terminal);
+    }
+
+    @Test
     public void testAddTerminal() throws Exception {
         Terminal terminal = new Terminal();
         terminal.setTerminalNo("ff4f93feeeee");

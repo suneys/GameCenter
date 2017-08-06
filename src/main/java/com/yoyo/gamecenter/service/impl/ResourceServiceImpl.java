@@ -46,8 +46,8 @@ public class ResourceServiceImpl implements ResourceService {
         return resourceDao.selectAllResourceByFileId(fId, (short) 0);
     }
 
-    public void selectTerminals(Long resourceId, List<Long> termianlIds) {
-        resourceDao.selectTerminals(resourceId,termianlIds);
+    public void selectTerminals(Long resourceId, List<String> termianlNos) {
+        resourceDao.selectTerminals(resourceId,termianlNos);
     }
 
     public int getResourceCount(Long uId, String text) {

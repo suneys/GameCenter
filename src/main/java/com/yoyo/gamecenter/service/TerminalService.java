@@ -17,9 +17,19 @@ public interface TerminalService {
 
     Terminal getTerminalByNo(String terminalNo);
 
+    Terminal getTerminalByNoWithGame(String terminalNo);
+
     void addTerminal(Terminal terminal);
 
     void updateTerminal(Terminal terminal);
+
+    void selectResources(String terminalNo,List<Long> resourceIds);
+
+    void deleteResources(String terminalNo);
+
+    void selectGames(String terminalNo,List<Long> gameIds);
+
+    void deleteGames(String terminalNo);
 
     List<Terminal> getAllTerminalByUserId(Long uId);
 

@@ -250,3 +250,15 @@ if (isBlank(Ids)) {
         }, "json");
     }
 }
+
+/**
+ *
+ * @param type 1--发布广告  2--发布游戏
+ */
+var sendResource = function (type) {
+    var Ids = GetResourceIds();
+    if (isBlank(Ids)) {
+        var url = getRootPath()+"/menu/sendResource?Ids=" +Ids + "&type=" + type;
+        parent.$("#submenu8").attr("href", url).text("一键发布").click();
+    }
+}

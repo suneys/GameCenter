@@ -106,6 +106,7 @@ function ShowWarning(title, text, directive, strId, Text1, Text2) {
                 case "DelLog": parent.frames["iframe2"].window.DelLog(strId); break;
                 case "VIP":parent.$(".cancel").click();R_NavAcount(3); break;
                 case "dingdan": parent.frames["iframe_"].window.CheckSubId(); break;
+                case "Game": parent.frames["iframe7"].window.DelGame(strId); break;
                 default:
                     ShowError(151, 10043);
                     break;
@@ -273,9 +274,11 @@ var R_NavAcount = function (Id) {
         case 3: parent.$("#submenu1001").click(); break;
     }
 };
-var R_Programmes= function () {
+var R_Game= function () {
     parent.CloseModal();
-    parent.frames["iframe9"].window.ParentRefresh();
+    //parent.frames["submenu7"].window.ParentRefresh();
+    alert("r_game");
+    parent.$("#submenu7").window.ParentRefresh();
 }
 var R_SysTemplate = function () {
     parent.CloseModal();
@@ -355,7 +358,7 @@ function HomeCarte(Id) {
     switch (Id) {
         case 1: parent.$("#submenu9").click(); break;
         case 2: parent.$("#submenu10").click(); break;
-        case 3: parent.$("#LogNav").click(); break;
+        case 3: parent.$("#submenu7").click(); break;
         case 4: window.open("/M/Pay/VipClass/"); break;
     }
 }

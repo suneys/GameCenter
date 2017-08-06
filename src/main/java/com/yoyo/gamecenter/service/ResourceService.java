@@ -24,7 +24,7 @@ public interface ResourceService {
 
     List<Resource> getAllResourceByFileId(long fId);
 
-    void selectTerminals(Long resourceId, List<Long> termianlIds);
+    void selectTerminals(Long resourceId, List<String> termianlNos);
 
     int getResourceCount(Long uId, String text);
 

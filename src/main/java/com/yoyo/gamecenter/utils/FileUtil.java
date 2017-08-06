@@ -67,4 +67,30 @@ public class FileUtil {
         }
         return false;
     }
+
+    /**
+     * 向文件写入数据
+     *
+     * @param path
+     * @param content
+     * @throws IOException
+     */
+    public static void writeToFile(String path, String content) throws IOException {
+        File file = new File(path);
+        File parent = file.getParentFile();
+        if (!parent.exists()) {
+            parent.mkdirs();
+        }
+        if (!file.exists()) {
+            file.createNewFile();
+        }
+        //FileWriter fw = new FileWriter(file);
+        //fw.write(content);
+        //fw.flush();
+        //fw.close();
+        OutputStreamWriter out = new OutputStreamWriter(new FileOutputStream(file),"utf-8");
+        out.write(content.toCharArray());
+        out.flush();
+        out.close();
+    }
 }

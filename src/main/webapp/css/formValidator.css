@@ -1,0 +1,28 @@
+﻿.onShow,.onFocus,.onError,.onCorrect,.onLoad {
+	height:20px;
+	line-height:20px;
+	display:block;
+	padding:0 5px 0 20px !important;
+	color:#444;
+	font-size:12px;
+	font-family:'microsoft yahei';
+	position:absolute;
+	_left:0px;
+	_top:40px;
+}
+.onShow {
+	display:block;
+	color:#888;
+	padding-left:10px
+}
+.onFocus {
+	background:url(../images/ico_valide.gif) no-repeat 1px -72px;
+	color:#1796f9;
+}
+.onError {
+	background:url(../images/ico_valide.gif) no-repeat 1px 4px;
+	color:#f30;
+}
+.onCorrect {
+	/*background:url(../images/ico_valide.gif) no-repeat 1px -32px;*/
+}

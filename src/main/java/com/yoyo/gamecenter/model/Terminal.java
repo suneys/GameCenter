@@ -1,12 +1,13 @@
 package com.yoyo.gamecenter.model;
 
+import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
 /**
  * Created by Administrator on 2017/5/20 0020.
  */
-public class Terminal {
+public class Terminal implements Serializable{
     private long tId;                            // 终端id
     private String terminalNo;                   // 终端编号
     private String terminalName;                 //终端名称
@@ -23,6 +24,15 @@ public class Terminal {
     private String version;                      // 版本号
     private User user;
     private List<Resource> resources;
+    private List<Game> games;
+
+    public List<Game> getGames() {
+        return games;
+    }
+
+    public void setGames(List<Game> games) {
+        this.games = games;
+    }
 
     public List<Resource> getResources() {
         return resources;

@@ -1,12 +1,13 @@
 package com.yoyo.gamecenter.model;
 
+import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
 /**
  * Created by Administrator on 2017/5/26 0026.
  */
-public class Resource {
+public class Resource implements Serializable{
     private long rId;
     private String fileName;            // 文件名称
     private int fileSize;               // 文件大小

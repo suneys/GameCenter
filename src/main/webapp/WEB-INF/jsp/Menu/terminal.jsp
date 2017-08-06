@@ -78,7 +78,11 @@
                     <div class="example-wrap">
                         <div class="example">
                             <div class="btn-group hidden-xs tooltip-demo" id="exampleTableEventsToolbar" role="group">
-                                <button onclick="SendYun()" data-intro=请在&quot;节目制作&quot;勾选节目再点我发布 id="BtnSend" class="btn btn-outline btn-default" data-toggle="tooltip" disabled=&quot;disabled&quot; data-placement="top" title="一键发布">
+                                <button onclick="SendYun()" data-intro=请在&quot;节目制作&quot;勾选节目再点我发布 id="BtnSend" class="btn btn-outline btn-default" data-toggle="tooltip"
+                                        <c:if test="${disabled == 1}">
+                                        disabled=&quot;disabled&quot;
+                                        </c:if>
+                                        data-placement="top" title="一键发布">
                                     <i class="fa fa-cloud-upload" aria-hidden="true"></i>
                                 </button>
                                 <button onclick="ScreenShot()" class="btn btn-default btn-outline" data-toggle="tooltip" data-placement="top" title="远程截屏">
@@ -117,8 +121,12 @@
 
         <!-- End Panel Other -->
 </div>
-<input type="hidden" id="Ids">
-<input type="hidden" id="DaySend" value="0">
+<input type="hidden" id="Ids"30+-
+<c:if test="${ids != null}">
+        value="${ids}"
+</c:if>
+>
+<input type="hidden" id="type" value="${type}">
 <script src="${pageContext.request.contextPath }/js/content.min.js"></script>
 
 <script src="${pageContext.request.contextPath }/js/bootstrap-table.js"></script>

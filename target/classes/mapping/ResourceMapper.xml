@@ -70,7 +70,7 @@
         SELECT t.*,r.* FROM t_resource r LEFT JOIN resource_terminal rt
         ON r.rId = rt.rId
         LEFT JOIN t_terminal t
-        ON t.rId = rt.tId
+        ON t.terminalNo = rt.tNo
         WHERE r.uId = #{uId} AND r.r_isDelete = #{isDelete}
     </select>
 
@@ -153,10 +153,10 @@
     <insert id="selectTerminals">
 
         INSERT INTO resource_terminal
-        (rId,tId)
+        (tNo,rId)
         VALUES
-        <foreach collection="terminalIds" item="id" separator=",">
-            (#{resourceId}, #{id})
+        <foreach collection="terminalNos" item="no" separator=",">
+            (#{no}, #{resourceId})
         </foreach>
 
     </insert>

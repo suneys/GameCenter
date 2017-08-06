@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yoyo.gamecenter.dao.GameDao">
+
+    <resultMap id="gameBaseMap" type="com.yoyo.gamecenter.model.Game">
+        <id column="gId" property="gId" jdbcType="BIGINT"/>
+        <result column="gameName" property="gameName" jdbcType="NVARCHAR"/>
+        <result column="path" property="path" jdbcType="NVARCHAR"/>
+        <result column="thumbPath" property="thumbPath" jdbcType="NVARCHAR"/>
+        <result column="g_isDelete" property="g_isDelete" jdbcType="SMALLINT"/>
+        <result column="packageName" property="packageName" jdbcType="NVARCHAR"/>
+        <result column="uId" property="uId" jdbcType="BIGINT"/>
+        <result column="gAttribute" property="gAttribute" jdbcType="SMALLINT"/>
+    </resultMap>
+
+    <select id="selectGameById" parameterType="java.lang.Long" resultMap="gameBaseMap">
+        SELECT g.* FROM  t_game g
+        WHERE  g.gId = #{gameId}
+    </select>
+
+    <select id="selectGameByName" parameterType="java.lang.String" resultMap="gameBaseMap">
+        SELECT g.* FROM  t_game g
+        WHERE  g.gameName = #{gameName}
+    </select>
+
+    <select id="selectAllGame" resultMap="gameBaseMap">
+        SELECT g.* FROM  t_game g
+    </select>
+
+    <select id="selectAllGameByUserId"  resultMap="gameBaseMap">
+        SELECT g.* FROM  t_game g
+        WHERE  g.uId = #{uId} AND g.g_isDelete = #{isDelete}
+    </select>
+
+    <select id="queryByPage" resultMap="gameBaseMap">
+        SELECT rr.* FROM
+        (
+        SELECT g.* FROM t_game g
+        WHERE g.g_isDelete = #{isDelete}
+        <if test="text != null">
+            AND g.name LIKE "%"#{text}"%"
+        </if>
+        ) rr
+    limit #{pageNo},#{pageSize}
+    </select>
+
+    <select id="getGameCount" resultType="java.lang.Integer">
+        SELECT COUNT(*) AS count_value FROM t_game g WHERE g.g_isDelete = #{isDelete}
+        <if test="text != null">
+            AND g.name LIKE "%"#{text}"%"
+        </if>
+    </select>
+
+    <insert id="addGame" parameterType="com.yoyo.gamecenter.model.Game">
+        INSERT INTO t_game
+        (
+        gameName,path,thumbPath,g_isDelete,packageName,uId,gAttribute
+        )
+        VALUES
+        (
+        #{gameName,jdbcType=NVARCHAR},#{path,jdbcType=NVARCHAR},#{thumbPath,jdbcType=NVARCHAR},
+        #{g_isDelete,jdbcType=SMALLINT},#{packageName,jdbcType=NVARCHAR},#{uId,jdbcType=BIGINT},
+        #{gAttribute,jdbcType=SMALLINT}
+        )
+    </insert>
+
+    <update id="updateGame" parameterType="com.yoyo.gamecenter.model.Game">
+        UPDATE t_game
+        <set>
+            <if test="gameName != null">
+                gameName = #{gameName,jdbcType=NVARCHAR},
+            </if>
+            <if test="path != null">
+                path = #{path,jdbcType=NVARCHAR},
+            </if>
+            <if test="thumbPath != null">
+                thumbPath = #{thumbPath,jdbcType=NVARCHAR},
+            </if>
+            <if test="g_isDelete != null">
+                g_isDelete = #{g_isDelete,jdbcType=SMALLINT},
+            </if>
+            <if test="packageName != null">
+                packageName = #{packageName,jdbcType=NVARCHAR},
+            </if>
+            <if test="uId != null">
+                uId = #{uId,jdbcType=BIGINT},
+            </if>
+            <if test="gAttribute != null">
+                gAttribute = #{gAttribute,jdbcType=BIGINT},
+            </if>
+        </set>
+        WHERE gId=#{gId,jdbcType=BIGINT}
+    </update>
+
+    <insert id="selectTerminals">
+        INSERT game_terminal
+        (terminalNo,gId)
+        VALUES
+        <foreach collection="terminalNos" item="no" separator=",">
+            (#{no}, #{gameId})
+        </foreach>
+    </insert>
+
+</mapper>
